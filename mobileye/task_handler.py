@@ -25,7 +25,7 @@ class TasksHolder:
         :param id: task id
         :param attempt: give the user 3 attempts to get valid id
         :return: bool: true if exist, else false
-                 message for log
+                 message info
         """
 
         if id in self.dict.keys():
@@ -41,7 +41,11 @@ class TasksHolder:
                 msg = "Id exist check failed 3 time. exit."
                 return False, msg
 
-    def check_if_status_is_open(self, id: str) -> typing.Tuple[bool, str]:
+    def check_if_status_is_open(self, id: int) -> typing.Tuple[bool, str]:
+        """
+        :param id: task id
+        :return: bool if open- true, message info
+        """
         if self.dict[id].get_status() == "open":
             msg = "task status is open."
             return True, msg
