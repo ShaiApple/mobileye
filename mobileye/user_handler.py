@@ -18,6 +18,3 @@ def get_input() -> argparse.Namespace:
         args.id = input('Please enter task id: ')
 
     return args.name, args.dept, int(args.id)
-
-
-

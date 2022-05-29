@@ -56,8 +56,8 @@ def _run_tool():
     if not has_permission:
         print_to_console(message)
         exit()
-    else: print_to_console(message)
-
+    else:
+        print_to_console(message)
 
     # -------- DO THE TASK --------
     source = task_holder.dict[task_id].get_source()
@@ -72,6 +72,7 @@ def _run_tool():
 
     TaskExecuter.execute_task(task_description, source, destination)
     write_to_log(logger, f"{task_description} from {source} to {destination} ")
+
 
 if __name__ == '__main__':
     _run_tool()

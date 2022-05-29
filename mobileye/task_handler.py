@@ -103,29 +103,30 @@ class Task:
     def get_status(self) -> str:
         return self.status
 
-    def get_source(self)->str:
+    def get_source(self) -> str:
         return self.source[0]
 
-    def get_destination(self)->str:
+    def get_destination(self) -> str:
         return self.destination[0]
 
 
 class TaskExecuter:
     @staticmethod
-    def execute_task(task_description:str, source, destination):
+    def execute_task(task_description: str, source: str, destination: str):
+        """
+        Function will check what is the task and execute the correct inner function.
+        """
         if task_description.startswith("Copy latest"):
             TaskExecuter.copy_latest(source, destination, task_description)
         elif task_description.startswith("Copy heaviest"):
             TaskExecuter.copy_heaviest(source, destination, task_description)
-        elif task_description.startswith("Copy") and "file named with" in task_description:
+        else:  # task_description.startswith("Copy") and "file named with" in task_description:
             TaskExecuter.copy_with(source, destination, task_description)
-        else:
-            raise Exception("Unknown case!!")
 
     @staticmethod
-    def copy_with(source, destination, description):
+    def copy_with(source: str, destination: str, description: str):
         extension = description.split(" ")[2]
-        sub_file_name = description.lower().split("file named with ")[1]
+        sub_file_name = description.split("file named with ")[1]
         file_path = os.path.join(source, f"*{sub_file_name}*.{extension}")
         files = glob.glob(file_path)
         if len(files) == 1:
@@ -134,15 +135,22 @@ class TaskExecuter:
             raise Exception("Too many files in copy_with")
 
     @staticmethod
-    def copy_heaviest(source, destination, description):
-        extension = description.lower().split("copy heaviest ")[1].split(" ")[0]
+    def copy_heaviest(source: str, destination: str, description: str):
+        """
+        Loop over files and copy the heaviest one
+        :param source: dir
+        :param destination:dir
+        :param description: the task
+        """
+        extension = description.split(" ")[2]
         file_path = os.path.join(source, f"*.{extension}")
         files = glob.glob(file_path)
         if len(files) > 0:
             heaviest_file = files[0]
             heaviest_file_size = os.path.getsize(heaviest_file)
             for cur_file in files[1:]:
-                # we assume there are no 2 files with the same size (in that case we will copy the first one)
+                # I assumed there are no two similar files (in size).
+                # in case two identical files are found, Iד will copy the first one.
                 cur_size = os.path.getsize(cur_file)
                 if cur_size > heaviest_file_size:
                     heaviest_file = cur_file
@@ -153,14 +161,15 @@ class TaskExecuter:
             raise Exception("couldn't find any files in copy_heaviest")
 
     @staticmethod
-    def copy_latest(source, destination, description):
+    def copy_latest(source: str, destination: str, description: str):
+        # Loop over files and copy the latest one
         extension = description.split(" ")[2]
         file_path = os.path.join(source, f"*.{extension}")
         files = glob.glob(file_path)
         if len(files) > 0:
             latest_file = files[0]
             latest_file_modification_date = os.path.getmtime(latest_file)
-            for cur_file in files[1:]:  # we assume there are no 2 files with the same modification date
+            for cur_file in files[1:]:  # I assumed there are no two files with the same modification date
                 cur_date = os.path.getmtime(cur_file)
                 if cur_date > latest_file_modification_date:
                     latest_file = cur_file
