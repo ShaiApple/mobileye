@@ -4,7 +4,7 @@ python "cli_tool.py" --name Shai Bremer --dept DE --id 3582
 Helpdesk 7080
 """
 
-from mobileye import get_input, TasksHolder, show_message, API, LOGS_PATH, write_to_log
+from mobileye import get_input, TasksHolder, print_to_console, API, LOGS_PATH, write_to_log
 from mobileye import TaskExecuter, datetime, logging, os, Logger
 
 
@@ -32,7 +32,7 @@ def _run_tool():
     is_exist, message = task_holder.check_if_exist(task_id)
     write_to_log(logger, message)
     if not is_exist:
-        show_message(message)
+        print_to_console(message)
         exit()
     # check if need to chenge id number
     if is_exist and message:
@@ -42,14 +42,14 @@ def _run_tool():
     is_open, message = task_holder.check_if_status_is_open(task_id)
     write_to_log(logger, message)
     if not is_open:
-        show_message(message)
+        print_to_console(message)
         exit()
     # -------- 6: permissions --------
     task_description = task_holder.dict[task_id].get_task_description()
     has_permission, message = task_holder.check_permission(task_description, dept)
     write_to_log(logger, message)
     if not has_permission:
-        show_message("You don't have sufficient permissions")
+        print_to_console("You don't have sufficient permissions")
         exit()
 
     # -------- DO THE TASK --------

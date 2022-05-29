@@ -1,0 +1,31 @@
+{% extends "dataco_monitor/base.html" %}
+{% load process_extras %}
+
+{% block content %}
+<div class="container">
+    <h1 class="font_orbitron_script text-center">DATACO Info</h1>
+
+    <table id="example" class="table table-hover table-dark table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>Setup 1</th>
+            <th>Setup 2</th>
+            <th>Setup 3</th>
+            <th>Setup combination occurrences in Dataco</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--   add to datatable so that has options of sorting etc-->
+        {% for setups,occurrences in setups_combination_occurrences %}
+        <tr>
+            <td>{% if setups|length > 0 %}{{setups.0}}{% endif %}</td>
+            <td>{% if setups|length > 1 %}{{setups.1}}{% endif %}</td>
+            <td>{% if setups|length > 2 %}{{setups.2}}{% endif %}</td>
+            <td>{{occurrences}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}

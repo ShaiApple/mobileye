@@ -20,5 +20,4 @@ def get_input() -> argparse.Namespace:
     return args.name, args.dept, int(args.id)
 
 
-def show_message(message: str):
-    print(message)
+
