@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Meie+Script|Shadows+Into+Light|Arvo|Monda');
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+.table-responsive{
+  height:400px;
+  overflow:scroll;
+}
+ thead tr:nth-child(1) th{
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+ }
+
+div.btn-group{
+  padding: 1.5px;
+}
+
+.jumbotron {
+  background-image: url("background.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.font_meie_script {
+  font-family: 'Meie Script', cursive;
+}
+.font_orbitron_script {
+  font-family: 'Orbitron';
+}
+/*$('#status').children("option:selected").text()*/
+/*select { color: black; }*/
+.success {
+    background-color: #5cb85c;
+    color:white; border-width: 3px; border-color: grey;
+
+}
+
+.no-ground-stations-data {
+    background-color: #d9534f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.no-imu-data {
+    background-color: #d9534f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.bad-results {
+    background-color: #d9534f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.no-lever-arm {
+    background-color: #d9534f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.no-fuse-id {
+    background-color: #d9534f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.alignment-imu-failed {
+    background-color: #d9534f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.no-gps-file {
+    background-color: #d9534f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.unknown-error {
+    background-color: #d9534f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.unchecked {
+    background-color: #7f7f7f;
+        color:white; border-width: 3px; border-color: grey;
+
+}
+
+.processing {
+    background-color: yellow;
+    color:white; border-width: 3px; border-color: grey;
+}
+
+
+/*.selected_option {color:white; border-width: 3px; border-color: grey; background:darkgreen;}*/
+/*.form-control[value="Unchecked"] {color:black; border-width: 3px; border-color: grey; background:grey;}*/
+/*.form-control[value="No Ground Stations Data"] {color:black; border-width: 3px; border-color: grey; background:red;}*/
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+}
+/*.badge.red_bg{*/
+/*    background-color: #d9534f;*/
+/*}*/
+/*.badge.Success{*/
+/*    background-color: #5cb85c;*/
+/*}*/
+/*.badge.Unchecked{*/
+/*    background-color: #7f7f7f;*/
+/*}*/
+
+a.no_link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.no_link:hover, a.no_link:focus {
+    color: #2A6496;
+    text-decoration: underline;
+}
+
+form .error {
+  color: #ff0000;
+}

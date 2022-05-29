@@ -1,0 +1,66 @@
+SensorParams::
+SensorTiming:
+1650 74250000
+
+
+TextureExp::
+ExposureParams:
+1 672 1 58 16 16 0.7
+ExposureControlParams:
+30 4 83 42 540
+ExposureControlMode:
+1 1
+ExposureControlRects:
+-624 -400 -224 -128 1
+-400 -208 -224 -128 1
+208 400 -224 -128 1
+-208 0 -224 -128 1
+0 208 -224 -128 1
+400 624 -224 -128 1
+-400 -208 -128 -64 1
+-208 0 -128 -64 1
+0 208 -128 -64 1
+208 400 -128 -64 1
+-208 0 -64 16 1
+0 208 -64 16 1
+-304 -96 -48 32 2
+-96 96 -48 32 2
+96 304 -48 32 2
+WiperDetectorParams:
+50 0.9 3 1
+ToneMappingParams:
+0.35 0.5 180 0.05
+
+
+ColorExp::
+ExposureParams:
+1 540 1 1 16 16 0.7
+ExposureControlParams:
+30 4 83 42 540
+ExposureControlMode:
+1 1
+ExposureControlRects:
+-624 -400 -224 -128 1
+-400 -208 -224 -128 1
+208 400 -224 -128 1
+-208 0 -224 -128 1
+0 208 -224 -128 1
+400 624 -224 -128 1
+-400 -208 -128 -64 1
+-208 0 -128 -64 1
+0 208 -128 -64 1
+208 400 -128 -64 1
+-208 0 -64 16 1
+0 208 -64 16 1
+-304 -96 -48 32 2
+-96 96 -48 32 2
+96 304 -48 32 2
+WiperDetectorParams:
+50 0.9 3 1
+ToneMappingParams:
+0.35 0.5 180 0.05
+
+LightingConditions::
+DND:
+2000 5000 125 500
+

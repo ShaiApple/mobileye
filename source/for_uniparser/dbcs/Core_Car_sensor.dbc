@@ -1,0 +1,324 @@
+VERSION "7"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MCU EyeQ4
+
+
+
+BO_ 162 Core_Car_sensor: 84 MCU
+ SG_ CIN_Zero_Byte : 0|8@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ Reserved_1 : 8|24@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ CIN_CRC : 32|32@1+ (1,0) [0|4294967295] "NA" EyeQ4
+ SG_ CIN_Protocol_Version : 64|8@1+ (1,0) [7|7] "counter" EyeQ4
+ SG_ CIN_Vehicle_Code : 72|8@1+ (1,0) [0|255] "counter" EyeQ4
+ SG_ CIN_Sync_Frame_Index : 80|8@1+ (1,0) [0|255] "counter" EyeQ4
+ SG_ Reserved_2 : 88|8@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ CIN_Vehicle_Speed : 96|15@1+ (0.015625,0) [0|350] "kph" EyeQ4
+ SG_ CIN_Vehicle_Speed_Valid : 111|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Vehicle_Yaw : 112|12@1+ (0.0625,-128) [-128|127.9375] "deg/s" EyeQ4
+ SG_ CIN_Vehicle_Yaw_Valid : 124|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_3 : 125|3@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ CIN_Lat_Accel : 128|16@1+ (0.00048828125,-15.687) [-15.687|15.687] "MPS2" EyeQ4
+ SG_ CIN_Lat_Accel_Valid : 144|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Wiper_Status_Valid : 145|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Wiper_Status : 146|3@1+ (1,0) [0|4] "ENUM" EyeQ4
+ SG_ CIN_Reverse_Indicator : 149|1@1+ (1,0) [0|1] "ENUM" EyeQ4
+ SG_ CIN_Reverse_Indicator_Valid : 150|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_4 : 151|9@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ CIN_Steering_Wheel_Angle : 160|16@1- (0.0625,0) [-2048|2047.9375] "deg" EyeQ4
+ SG_ CIN_Steering_Wheel_Angle_Valid : 176|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Turn_Switch_Status : 177|2@1+ (1,0) [0|3] "ENUM" EyeQ4
+ SG_ CIN_High_Beam_Active : 179|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Fog_Light_Active : 180|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Accel_Pedal_Value : 181|8@1+ (0.39453125,0) [0|100] "percentage" EyeQ4
+ SG_ CIN_Accel_Pedal_Valid : 189|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_5 : 190|2@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ CIN_Accel_Rate : 192|15@1+ (0.01,-15) [-15|10] "MPS2" EyeQ4
+ SG_ CIN_Accel_Rate_Valid : 207|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Ambient_Light_Level : 208|14@1+ (1,0) [0|16000] "NA" EyeQ4
+ SG_ CIN_Ambient_Light_Level_Valid : 222|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_6 : 223|1@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ CIN_Brake_Pedal_Position : 224|8@1+ (0.39453125,0) [0|100] "precentage" EyeQ4
+ SG_ CIN_Brake_Pedal_Pressed : 232|1@1+ (1,0) [0|1] "ENUM" EyeQ4
+ SG_ CIN_Brake_Pedal_Pressed_Valid : 233|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Vehicle_Display_Speed : 234|15@1+ (0.015625,0) [0|350] "kph" EyeQ4
+ SG_ CIN_Vehicle_Display_Speed_Valid : 249|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_7 : 250|6@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ CIN_Effective_Steer_Axle_Angle : 256|16@1- (0.002747,0) [-90|90] "deg" EyeQ4
+ SG_ Reserved_8 : 272|16@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ CIN_MCU_Sync_Timestamp : 288|64@1+ (1,0) [0|18446744073709551615] "ms" EyeQ4
+ SG_ CIN_MCU_Sync_Timestamp_Valid : 352|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Susp_Height_Delta : 353|12@1- (0.125,0) [-140|140] "mm" EyeQ4
+ SG_ CIN_Susp_Height_Delta_Valid : 365|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_Susp_Height_Change_Active : 366|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_VSpeed_HiPrecision : 367|15@1+ (0.015625,0) [0|350] "kph" EyeQ4
+ SG_ CIN_VSpeed_HiPrecision_Valid : 382|2@1+ (1,0) [0|2] "ENUM" EyeQ4
+ SG_ CIN_gpsCountryCode_Capital : 384|2@1+ (1,0) [0|2] "ENUM" EyeQ4
+ SG_ CIN_gpsCountryCode_FirstChar : 386|5@1+ (1,0) [0|26] "ENUM" EyeQ4
+ SG_ CIN_gpsCountryCode_SecondChar : 391|5@1+ (1,0) [0|26] "ENUM" EyeQ4
+ SG_ CIN_AEB_Brake_Activated : 396|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ CIN_AEB_BrakeValid : 397|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_Tire_Preassure_Psi_FL_V : 398|1@1+ (1,0) [0|1] "PSI" EyeQ4
+ SG_ GSensor_Tire_Preassure_Psi_FR_V : 399|1@1+ (1,0) [0|1] "PSI" EyeQ4
+ SG_ GSensor_Tire_Preassure_Psi_RL_V : 400|1@1+ (1,0) [0|1] "PSI" EyeQ4
+ SG_ GSensor_Tire_Preassure_Psi_RR_V : 401|1@1+ (1,0) [0|1] "PSI" EyeQ4
+ SG_ GSensor_Tire_Preassure_Psi_FL : 402|6@1+ (1,0) [0|63] "PSI" EyeQ4
+ SG_ GSensor_Tire_Preassure_Psi_FR : 408|6@1+ (1,0) [0|63] "PSI" EyeQ4
+ SG_ Reserved_9 : 414|2@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GSensor_Tire_Preassure_Psi_RL : 416|6@1+ (1,0) [0|63] "PSI" EyeQ4
+ SG_ GSensor_Tire_Preassure_Psi_RR : 422|6@1+ (1,0) [0|63] "PSI" EyeQ4
+ SG_ GSensor_Acc_Pitch_V : 428|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_Acc_Pitch : 429|16@1+ (0.01,-6.55) [-6.55|6.55] "MPS2" EyeQ4
+ SG_ GSensor_Gyro_PitchRate_V : 445|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_10 : 446|2@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GSensor_Gyro_PitchRate : 448|16@1+ (0.0002,-6.55) [-6.55|6.55] "RPS" EyeQ4
+ SG_ GSensor_Gyro_RollRate_V : 464|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_11 : 465|15@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GSensor_Gyro_RollRate : 480|16@1+ (0.0002,-6.55) [-6.55|6.55] "RPS" EyeQ4
+ SG_ GSensor_WheelSpeed_FL_V : 496|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_WheelSpeed_FR_V : 497|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_WheelSpeed_RL_V : 498|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_WheelSpeed_RR_V : 499|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_12 : 500|12@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GSensor_WheelSpeed_FL : 512|16@1+ (0.01,-327.6) [-327.6|327.6] "RPS" EyeQ4
+ SG_ GSensor_WheelSpeed_FR : 528|16@1+ (0.01,-327.6) [-327.6|327.6] "RPS" EyeQ4
+ SG_ GSensor_WheelSpeed_RL : 544|16@1+ (0.01,-327.6) [-327.6|327.6] "RPS" EyeQ4
+ SG_ GSensor_WheelSpeed_RR : 560|16@1+ (0.01,-327.6) [-327.6|327.6] "RPS" EyeQ4
+ SG_ GSensor_Wheel_Direction_FL_V : 576|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_Wheel_Direction_FR_V : 577|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_Wheel_Direction_RL_V : 578|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_Wheel_Direction_RR_V : 579|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_Wheel_Direction_FL : 580|2@1+ (1,0) [0|3] "ENUM" EyeQ4
+ SG_ GSensor_Wheel_Direction_FR : 582|2@1+ (1,0) [0|3] "ENUM" EyeQ4
+ SG_ GSensor_Wheel_Direction_RL : 584|2@1+ (1,0) [0|3] "ENUM" EyeQ4
+ SG_ GSensor_Wheel_Direction_RR : 586|2@1+ (1,0) [0|3] "ENUM" EyeQ4
+ SG_ GSensor_WheelTicks_FL_V : 588|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_WheelTicks_FR_V : 589|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_WheelTicks_RL_V : 590|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_WheelTicks_RR_V : 591|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GSensor_WheelTicks_FL : 592|8@1+ (1,0) [0|255] "counter" EyeQ4
+ SG_ GSensor_WheelTicks_FR : 600|8@1+ (1,0) [0|255] "counter" EyeQ4
+ SG_ GSensor_WheelTicks_RL : 608|8@1+ (1,0) [0|255] "counter" EyeQ4
+ SG_ GSensor_WheelTicks_RR : 616|8@1+ (1,0) [0|255] "counter" EyeQ4
+ SG_ fcaGapSensitivityValid : 624|1@1+ (1,0) [0|1] "ENUM" EyeQ4
+ SG_ fcaGapSensitivity : 625|2@1+ (1,0) [0|3] "ENUM" EyeQ4
+ SG_ pcwGapSensitivityValid : 627|1@1+ (1,0) [0|1] "ENUM" EyeQ4
+ SG_ pcwGapSensitivity : 628|2@1+ (1,0) [0|3] "ENUM" EyeQ4
+ SG_ Driver_Awareness_Valid : 630|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Driver_Awareness : 631|7@1+ (0.01,0) [0|1] "precentage" EyeQ4
+ SG_ External_Temp_Valid : 638|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_13 : 639|1@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ External_Temp : 640|14@1+ (0.01,-50) [-50|70] "deg C" EyeQ4
+ SG_ Reserved_14 : 654|18@1+ (1,0) [0|0] "NA" EyeQ4
+
+
+CM_ SG_ 162 CIN_CRC "CRC on all signals";
+CM_ SG_ 162 CIN_Protocol_Version "Version";
+CM_ SG_ 162 CIN_Vehicle_Code "Used for data collection purposes";
+CM_ SG_ 162 CIN_Sync_Frame_Index "Synchronizes between messages in same frame";
+CM_ SG_ 162 CIN_Vehicle_Speed "Actual vehicle speed. In case the vehicle driving direction is backwards then use GSensor_Wheel_Direction signals to indicate the direction";
+CM_ SG_ 162 CIN_Vehicle_Speed_Valid "Establishes validity of speed";
+CM_ SG_ 162 CIN_Vehicle_Yaw "Positive on right turn";
+CM_ SG_ 162 CIN_Vehicle_Yaw_Valid "Establishes validity of Yaw";
+CM_ SG_ 162 CIN_Lat_Accel "Positive on right acceleration";
+CM_ SG_ 162 CIN_Lat_Accel_Valid "Establishes validity of Acceleration";
+CM_ SG_ 162 CIN_Wiper_Status_Valid "establishes validity of wiper signal";
+CM_ SG_ 162 CIN_Wiper_Status "How fast wiper is moving (speed not fully implemented - at the moment, 0 is off and everything else is read as on) 0=OFF 1=ON (LOW) 2=ON (MEDIUM) 3=ON (HIGH) 4=ON (SINGLE WIPE)";
+CM_ SG_ 162 CIN_Reverse_Indicator "Indicates gear is set to reverse mode";
+CM_ SG_ 162 CIN_Reverse_Indicator_Valid "Establishes validity of reverse indicator";
+CM_ SG_ 162 CIN_Steering_Wheel_Angle "Angle to the right is positive";
+CM_ SG_ 162 CIN_Steering_Wheel_Angle_Valid "Establishes validity of steering wheel angle";
+CM_ SG_ 162 CIN_Turn_Switch_Status "Status of left right indicator";
+CM_ SG_ 162 CIN_High_Beam_Active "Indicates the status of the High Beam lights - True means high lights are on. Any other case will be False";
+CM_ SG_ 162 CIN_Fog_Light_Active "Are fog lights active";
+CM_ SG_ 162 CIN_Accel_Pedal_Value "Provides the graduated value of the accelerator pedal";
+CM_ SG_ 162 CIN_Accel_Pedal_Valid "Establishes validity of the Accelerator Pedal signal";
+CM_ SG_ 162 CIN_Accel_Rate "Longitudinal Acceleration / Deceleration Rate";
+CM_ SG_ 162 CIN_Accel_Rate_Valid "Establishes the validity of the rate provided for acceleration/deceleration";
+CM_ SG_ 162 CIN_Ambient_Light_Level "Used to communicate the level of ambient light using external sensors";
+CM_ SG_ 162 CIN_Ambient_Light_Level_Valid "Is the AmbientLightLevel signal valid or not";
+CM_ SG_ 162 CIN_Brake_Pedal_Position "Communicates the position of the brake pedal";
+CM_ SG_ 162 CIN_Brake_Pedal_Pressed "Indicates whether the pedal is pressed (enum)";
+CM_ SG_ 162 CIN_Brake_Pedal_Pressed_Valid "Establishes the validity of the brake pedal signal";
+CM_ SG_ 162 CIN_Vehicle_Display_Speed "Display vehicle speed from cluster";
+CM_ SG_ 162 CIN_Vehicle_Display_Speed_Valid "Establishes validity of display speed";
+CM_ SG_ 162 CIN_Effective_Steer_Axle_Angle "When turning to the right, this signal should be positive. If set to 0xFFFF signal is classed as invalid and any functionality that cannot operate without such a signal will be disabled.";
+CM_ SG_ 162 CIN_MCU_Sync_Timestamp "MCU local clock timestamp at the moment clock sync occurred.";
+CM_ SG_ 162 CIN_MCU_Sync_Timestamp_Valid "Establishes that the MCU is communicating to the EyeQ a timestamp related to a toggled GPIO pin";
+CM_ SG_ 162 CIN_Susp_Height_Delta "The change of the camera height due to changes in the height of the vehicle's suspension.";
+CM_ SG_ 162 CIN_Susp_Height_Delta_Valid "A flag indicating when the suspension height signal is valid for use by the EyeQ. ";
+CM_ SG_ 162 CIN_Susp_Height_Change_Active "A flag indicating that a change to the height of the suspension is in progress. ";
+CM_ SG_ 162 CIN_VSpeed_HiPrecision "Hi precision speed signal odometry speed";
+CM_ SG_ 162 CIN_VSpeed_HiPrecision_Valid "Establishes validity of Hi Precision speed";
+CM_ SG_ 162 CIN_gpsCountryCode_Capital "non capital can be used for USA states only. If not set using capital";
+CM_ SG_ 162 CIN_gpsCountryCode_FirstChar "Country Code ";
+CM_ SG_ 162 CIN_gpsCountryCode_SecondChar "Country Code ";
+CM_ SG_ 162 CIN_AEB_Brake_Activated "Indicates whether AEB brake is executed by vehicle";
+CM_ SG_ 162 CIN_AEB_BrakeValid "Establishes the validity of the AEB brake signal";
+CM_ SG_ 162 GSensor_Tire_Preassure_Psi_FL_V "Actual Tire Pressure in PSI.";
+CM_ SG_ 162 GSensor_Tire_Preassure_Psi_FR_V "Actual Tire Pressure in PSI.";
+CM_ SG_ 162 GSensor_Tire_Preassure_Psi_RL_V "Actual Tire Pressure in PSI.";
+CM_ SG_ 162 GSensor_Tire_Preassure_Psi_RR_V "Actual Tire Pressure in PSI.";
+CM_ SG_ 162 GSensor_Tire_Preassure_Psi_FL "Actual Tire Pressure in PSI.";
+CM_ SG_ 162 GSensor_Tire_Preassure_Psi_FR "Actual Tire Pressure in PSI.";
+CM_ SG_ 162 GSensor_Tire_Preassure_Psi_RL "Actual Tire Pressure in PSI.";
+CM_ SG_ 162 GSensor_Tire_Preassure_Psi_RR "Actual Tire Pressure in PSI.";
+CM_ SG_ 162 GSensor_Acc_Pitch_V "Validators";
+CM_ SG_ 162 GSensor_Acc_Pitch "IMU measurement of the acceleration in the height direction";
+CM_ SG_ 162 GSensor_Gyro_PitchRate_V "Validators";
+CM_ SG_ 162 GSensor_Gyro_PitchRate "Vehicle pitch rate. Indicates the change derivative of pitch in time.";
+CM_ SG_ 162 GSensor_Gyro_RollRate_V "Validators";
+CM_ SG_ 162 GSensor_Gyro_RollRate "Vehicle roll rate. Indicates the change derivative of roll in time.";
+CM_ SG_ 162 GSensor_WheelSpeed_FL_V "Validators";
+CM_ SG_ 162 GSensor_WheelSpeed_FR_V "Validators";
+CM_ SG_ 162 GSensor_WheelSpeed_RL_V "Validators";
+CM_ SG_ 162 GSensor_WheelSpeed_RR_V "Validators";
+CM_ SG_ 162 GSensor_WheelSpeed_FL "Wheel speed in rad/s.  Note: 0xFFFD=INIT 0xFFFE=UNDER_VOLTAGE 0xFFFF=ERROR";
+CM_ SG_ 162 GSensor_WheelSpeed_FR "Wheel speed in rad/s.  Note: 0xFFFD=INIT 0xFFFE=UNDER_VOLTAGE 0xFFFF=ERROR";
+CM_ SG_ 162 GSensor_WheelSpeed_RL "Wheel speed in rad/s.  Note: 0xFFFD=INIT 0xFFFE=UNDER_VOLTAGE 0xFFFF=ERROR";
+CM_ SG_ 162 GSensor_WheelSpeed_RR "Wheel speed in rad/s.  Note: 0xFFFD=INIT 0xFFFE=UNDER_VOLTAGE 0xFFFF=ERROR";
+CM_ SG_ 162 GSensor_Wheel_Direction_FL_V "Wheel tick number of front left wheel validator";
+CM_ SG_ 162 GSensor_Wheel_Direction_FR_V "Wheel tick number of front right wheel validator";
+CM_ SG_ 162 GSensor_Wheel_Direction_RL_V "Wheel tick number of rear left wheel validator";
+CM_ SG_ 162 GSensor_Wheel_Direction_RR_V "Wheel tick number of rear right wheel validator";
+CM_ SG_ 162 GSensor_Wheel_Direction_FL "Drive direction of front left wheel.";
+CM_ SG_ 162 GSensor_Wheel_Direction_FR "Drive direction of front right wheel.";
+CM_ SG_ 162 GSensor_Wheel_Direction_RL "Drive direction of rear left wheel.";
+CM_ SG_ 162 GSensor_Wheel_Direction_RR "Drive direction of rear right wheel.";
+CM_ SG_ 162 GSensor_WheelTicks_FL_V "Validators";
+CM_ SG_ 162 GSensor_WheelTicks_FR_V "Validators";
+CM_ SG_ 162 GSensor_WheelTicks_RL_V "Validators";
+CM_ SG_ 162 GSensor_WheelTicks_RR_V "Validators";
+CM_ SG_ 162 GSensor_WheelTicks_FL "Wheel tick number of front left wheel. 0XFF=ERROR";
+CM_ SG_ 162 GSensor_WheelTicks_FR "Wheel tick number of front right wheel. 0XFF=ERROR";
+CM_ SG_ 162 GSensor_WheelTicks_RL "Wheel tick number of rear left wheel. 0XFF=ERROR";
+CM_ SG_ 162 GSensor_WheelTicks_RR "Wheel tick number of rear right wheel. 0XFF=ERROR";
+CM_ SG_ 162 fcaGapSensitivityValid "If the FCA Gap sensitivity is valid";
+CM_ SG_ 162 fcaGapSensitivity "3 level setting used to tailor the non braking component of forward collision for vehicles. ";
+CM_ SG_ 162 pcwGapSensitivityValid "If the PCW gap sensitivity is valid";
+CM_ SG_ 162 pcwGapSensitivity "3 level setting used to tailor the non braking component of forward collision for pedestrians.";
+CM_ SG_ 162 Driver_Awareness_Valid "Is the Driver Awareness signal valid or not";
+CM_ SG_ 162 Driver_Awareness "Driver awareness - 0 represents lack of awareness while values closer to 1 show higher awareness";
+CM_ SG_ 162 External_Temp_Valid "is External temperature value is valid to be used";
+CM_ SG_ 162 External_Temp "external temperature in degrees Celsius";
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "BusType" "Ethernet";
+
+BA_ "GenSigStartValue" SG_ 162 CIN_Protocol_Version 7;
+BA_ "GenSigStartValue" SG_ 162 GSensor_WheelSpeed_FL 58260;
+BA_ "GenSigStartValue" SG_ 162 GSensor_WheelSpeed_FR 58260;
+BA_ "GenSigStartValue" SG_ 162 GSensor_WheelSpeed_RL 58260;
+BA_ "GenSigStartValue" SG_ 162 GSensor_WheelSpeed_RR 58260;
+BA_ "GenSigStartValue" SG_ 162 GSensor_Wheel_Direction_FL 3;
+BA_ "GenSigStartValue" SG_ 162 GSensor_Wheel_Direction_FR 3;
+BA_ "GenSigStartValue" SG_ 162 GSensor_Wheel_Direction_RL 3;
+BA_ "GenSigStartValue" SG_ 162 GSensor_Wheel_Direction_RR 3;
+BA_ "GenSigStartValue" SG_ 162 GSensor_WheelTicks_FL 255;
+BA_ "GenSigStartValue" SG_ 162 GSensor_WheelTicks_FR 255;
+BA_ "GenSigStartValue" SG_ 162 GSensor_WheelTicks_RL 255;
+BA_ "GenSigStartValue" SG_ 162 GSensor_WheelTicks_RR 255;
+
+
+VAL_ 162 CIN_Vehicle_Speed_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Vehicle_Yaw_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Lat_Accel_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Wiper_Status_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Wiper_Status 4 "SINGLE_WIPE" 3 "HIGH" 2 "MEDIUM" 1 "LOW" 0 "OFF" ;
+VAL_ 162 CIN_Reverse_Indicator 1 "REVERSE" 0 "FORWARD" ;
+VAL_ 162 CIN_Reverse_Indicator_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Steering_Wheel_Angle_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Turn_Switch_Status 3 "HAZARD" 2 "RIGHT" 1 "LEFT" 0 "INACTIVE" ;
+VAL_ 162 CIN_High_Beam_Active 1 "TRUE" 0 "FALSE" ;
+VAL_ 162 CIN_Fog_Light_Active 1 "TRUE" 0 "FALSE" ;
+VAL_ 162 CIN_Accel_Pedal_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Accel_Rate_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Ambient_Light_Level_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Brake_Pedal_Pressed 1 "PRESSED" 0 "NOT_PRESSED" ;
+VAL_ 162 CIN_Brake_Pedal_Pressed_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Vehicle_Display_Speed_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_MCU_Sync_Timestamp_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Susp_Height_Delta_Valid 1 "VALID" 0 "NOT_VALID" ;
+VAL_ 162 CIN_Susp_Height_Change_Active 1 "ACTIVE" 0 "NOT_ACTIVE" ;
+VAL_ 162 CIN_VSpeed_HiPrecision_Valid 2 "SIGNAL_OK" 1 "SIGNAL_NOT_IN_SPEC" 0 "NOT_AVAILABLE" ;
+VAL_ 162 CIN_gpsCountryCode_Capital 2 "NON_CAPITAL" 1 "CAPITAL" 0 "NOT_SET" ;
+VAL_ 162 CIN_gpsCountryCode_FirstChar 26 "Z" 25 "Y" 24 "X" 23 "W" 22 "V" 21 "U" 20 "T" 19 "S" 18 "R" 17 "Q" 16 "P" 15 "O" 14 "N" 13 "M" 12 "L" 11 "K" 10 "J" 9 "I" 8 "H" 7 "G" 6 "F" 5 "E" 4 "D" 3 "C" 2 "B" 1 "A" 0 "NONE" ;
+VAL_ 162 CIN_gpsCountryCode_SecondChar 26 "Z" 25 "Y" 24 "X" 23 "W" 22 "V" 21 "U" 20 "T" 19 "S" 18 "R" 17 "Q" 16 "P" 15 "O" 14 "N" 13 "M" 12 "L" 11 "K" 10 "J" 9 "I" 8 "H" 7 "G" 6 "F" 5 "E" 4 "D" 3 "C" 2 "B" 1 "A" 0 "NONE" ;
+VAL_ 162 CIN_AEB_Brake_Activated 1 "TRUE" 0 "FALSE" ;
+VAL_ 162 CIN_AEB_BrakeValid 1 "TRUE" 0 "FALSE" ;
+VAL_ 162 GSensor_Acc_Pitch_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_Gyro_PitchRate_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_Gyro_RollRate_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_WheelSpeed_FL_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_WheelSpeed_FR_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_WheelSpeed_RL_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_WheelSpeed_RR_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_Wheel_Direction_FL_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_Wheel_Direction_FR_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_Wheel_Direction_RL_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_Wheel_Direction_RR_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_Wheel_Direction_FL 3 "INVALID" 2 "INIT" 1 "REVERSE" 0 "FORWARD" ;
+VAL_ 162 GSensor_Wheel_Direction_FR 3 "INVALID" 2 "INIT" 1 "REVERSE" 0 "FORWARD" ;
+VAL_ 162 GSensor_Wheel_Direction_RL 3 "INVALID" 2 "INIT" 1 "REVERSE" 0 "FORWARD" ;
+VAL_ 162 GSensor_Wheel_Direction_RR 3 "INVALID" 2 "INIT" 1 "REVERSE" 0 "FORWARD" ;
+VAL_ 162 GSensor_WheelTicks_FL_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_WheelTicks_FR_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_WheelTicks_RL_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 GSensor_WheelTicks_RR_V 1 "VALID" 0 "INVALID" ;
+VAL_ 162 fcaGapSensitivityValid 1 "TRUE" 0 "FALSE" ;
+VAL_ 162 fcaGapSensitivity 3 "FAR" 2 "MEDIUM" 1 "NEAR" 0 "OFF" ;
+VAL_ 162 pcwGapSensitivityValid 1 "TRUE" 0 "FALSE" ;
+VAL_ 162 pcwGapSensitivity 3 "FAR" 2 "MEDIUM" 1 "NEAR" 0 "OFF" ;
+VAL_ 162 Driver_Awareness_Valid 1 "TRUE" 0 "FALSE" ;
+VAL_ 162 External_Temp_Valid 1 "TRUE" 0 "FALSE" ;
+
+
+
+

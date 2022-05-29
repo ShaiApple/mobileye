@@ -1,0 +1,189 @@
+<h1 class="font_orbitron_script text-center">DC Table</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top-2 ">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <form method='GET'>
+                    <button type="button" class="btn btn-outline-success " onclick="update_db()">Update DB!</button>
+                </form>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link center"> Page {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link center"> Amount of Clipstors: {{ page_obj.paginator.count }}</div>
+            </li>
+
+        </ul>
+
+
+        <ul class="navbar-nav mx-auto">
+            <!--            <form action="{% url 'new_excel' %}" class="form-inline my-2 my-lg-0" method="get">-->
+            <li class="nav-item">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="new_excel_btn"
+                        type="submit">Export Dataco to Excel First Time!
+                </button>
+            </li>
+            <li class="nav-item">
+                <form id="export_excel" class="form-inline my-2 my-lg-0" method="get">
+                    <input class="form-control mr-sm-2" name="dataco_key" type="text" placeholder="Dataco Number">
+                    <button class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit">Update Excel!
+                    </button>
+                </form>
+            </li>
+        </ul>
+
+        <div id="excel_header_modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- todo change this to for loop -->
+                        <form id="excel_header_form" action="{% url 'new_excel' %}" class="form my-2 my-lg-0"
+                              method="get">
+                            <input class="form-control mr-sm-2" id="excel_dataco_id" name="dataco_key" type="text"
+                                   placeholder="Dataco Number">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="dataco_id" class="form-check-input">Dataco Key
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="clipstor_id" class="form-check-input">Clipstor ID
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="data_owner" class="form-check-input">Data Owner
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="drive_path" class="form-check-input">Drive Path
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="epm_type" class="form-check-input">Epm Type
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="date_recorded" class="form-check-input">Date
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="INS extract" class="form-check-input">INS extract
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="INS post process" class="form-check-input">INS post
+                                    process
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="Velodyne" class="form-check-input">Velodyne
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="route" class="form-check-input">Route
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="loop" class="form-check-input">Loops
+                                </label>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <input value="Create New Excel!" form="excel_header_form" type="submit" id="submit_excel"
+                               class="btn btn-success"
+                               data-dismiss="modal">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="form-inline my-2 my-lg-0" method="get">
+
+            <div class="form-row">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="filter_checkbo" name="isRefresh">
+                    <label class="form-check-label text-danger" for="filter_checkbo">Refresh</label>
+                </div>
+                <div class="col">
+                    <select class="form-control custom-select" name="selectGrouoFilter">
+                        <option value="dataco" selected>Dataco</option>
+                        <option value="clipstor">Clipstor</option>
+                        <option value="drive_path">Drive Path</option>
+                        <option value="data_owner">Data Owner</option>
+                        <option value="carname">Car Name</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <input class="form-control col-md-12" id="query_clipstor_id" name="query_data"
+                           type="text" placeholder="Search..." aria-label="Search">
+                </div>
+                <button class="btn btn-outline-success my-2 my-sm-0" name="btn_search" type="submit">Search!</button>
+            </div>
+        </form>
+
+
+    </div>
+
+</nav>
+<script>
+    $(document).on('click', "#submit_excel", function () {
+        // $("#excel_header_form").submit()
+        var form = $("#excel_header_form");
+        var url = form.attr('action');
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: form.serialize(), // serializes the form's elements.
+            success: function (data) {
+                alert(data.status); // show response from the php script.
+            }
+        });
+
+    });
+    $(document).on('submit', "#export_excel", function () {
+        var form = $("#export_excel");
+        var url = "{% url 'export_to_excel' %}"
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: form.serialize(), // serializes the form's elements.
+            success: function (data) {
+                alert(data.status); // show response from the php script.
+            }
+        });
+
+    });
+    $(document).on('click', "#new_excel_btn", function () {
+        $('#excel_header_modal').modal('show');
+    });
+</script>
+<script type="text/javascript">
+    function update_db() {
+        alert('Updating database in background!\nA message will be alerted when the update has been completed.\nFeel free to continue browsing')
+        $.ajax({
+            type: 'GET',
+            url: "{% url 'updateDB' %}",
+            success: function () {
+                alert('Finished Updating DB!')
+            },
+            failure: function () {
+                alert('Error updating!')
+            },
+
+        });
+    }
+</script>

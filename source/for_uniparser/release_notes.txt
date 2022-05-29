@@ -1,0 +1,133 @@
+environment settings:
+step 1 -  
+        take canlib32.dll from ..\SensorUI\dll_to_put_in_SysWOW64
+        drop it (or replace) in: C:\Windows\SysWOW64
+        
+step 2 - who to configure the settings file:
+         
+         2.1
+             rfc_start_bit - roll frame counter OR sync frame index
+             crc_start_bit - crc signal that calculated over your sensor
+             data_start_bit - the data that crc calculates
+             
+             example for a sensor message:
+             
+             00 ^01^ c0 08 00 00 08 00 80 00 00 7d 03 00 00 ^eb 3f^
+             00 ^02^ c0 08 00 00 08 00 80 00 00 7d 03 00 00 ^eb 3f^
+             
+             if this case the: 
+             "rfc_start_bit" value is "2"
+             "rfc_end_bit" value is   "4"
+             
+             "crc_start_bit" value is "30"
+             "crc_end_bit" value is   "34"
+            
+             in case the data calculate over the whole sensor except the crc bytes so:
+             
+             "data_start_bit" value is "0"
+             "data_end_bit" value is   "30"
+         
+         2.2
+             there are 2 crc calculators you must choose the right one 
+             if there is not crc calculation leave the option empty 
+             
+             example:
+             crc_calculator = crc16_calculator \ crc32_trw
+             
+         2.3 littleEndian option is boolean:
+         
+             example:
+             littleEndian = True \ False
+             
+         2.4 number_of_messages
+             number of message to be created it remanded to use the amount of your sync frame index
+             in the sensor 
+             
+             example:
+             number_of_messages = 255 
+
+         2.5 protocol = spi / uart / can 
+             each protocol type has different additional options see below
+             
+            2.5.1 if: 
+                  project = spi 
+                  simulator = path to your simulator directory
+                  
+                  if:
+                  project = uart
+                  baudrate = 2000000 (BOUD RATE)
+                  serial_port = 23   (COM PROT)
+                  
+                  if
+                  project = can
+                  (no additional flags)
+        
+        below you can see an example for all possible configurations:      
+        
+step 3 - run the ../SensorUI/SensorUI.py
+         at the first the script will ask for "sensor.dbc" file automatically
+         at the second run an options to change *.dbc or to continue with the current one will be available.
+         
+step 4 - when using the "SEND" button to send the sensor make sure that the desired project appears in the combo box
+
+         
+example for settings.cfg file:
+         
+        section in the *.cfg file should look like:
+         
+        ###########
+        #   SPI   #
+        ###########
+        
+        [project name]
+        
+        rfc_start_bit = 184
+        rfc_end_bit = 186
+        crc_start_bit = 176
+        crc_end_bit = 184
+        data_start_bit = 184
+        data_end_bit = 232
+        crc_calculator = [crc16_calculator or crc32_trw ]
+        littleEndian = [True or False]
+        number_of_messages = 30
+        protocol = spi
+        simulator = \\dfs\MEhomes\yonatanfr\online\app\Magna\SensorUI\Simulator
+        
+        
+        ###########
+        #   UART  #
+        ###########
+        
+        [project name]
+        
+        rfc_start_bit = 2
+        rfc_end_bit = 4
+        crc_start_bit = 52
+        crc_end_bit = 56
+        data_start_bit = 0
+        data_end_bit = 52
+        crc_calculator = [crc16_calculator or crc32_trw ]
+        littleEndian = [True or False]
+        number_of_messages = 30
+        protocol = uart
+        baudrate = 2000000
+        serial_port = 23
+        
+        
+        ###########
+        #   CAN   #
+        ###########
+        
+        [project name]
+        
+        rfc_start_bit = 0
+        rfc_end_bit = 2
+        crc_start_bit = 12
+        crc_end_bit = 16
+        data_start_bit = 0
+        data_end_bit = 12
+        crc_calculator = [crc16_calculator or crc32_trw ]
+        littleEndian = [True or False]
+        number_of_messages = 30
+        protocol = can
+         

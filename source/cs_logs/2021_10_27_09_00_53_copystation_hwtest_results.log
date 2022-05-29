@@ -1,0 +1,52 @@
+[
+  {
+    "Testsuite": "SCSI Controller and IcyDock wiring",
+    "Teststeps": [
+      {
+        "Step": 0,
+        "Name": "No disks test",
+        "Result": "PASSED"
+      },
+      {
+        "Step": 1,
+        "Name": "Correct detection of ros10 disk0",
+        "Result": "FAILED"
+      },
+      {
+        "Step": 2,
+        "Name": "Correct detection of ros10 disk1",
+        "Result": "PASSED"
+      },
+      {
+        "Step": 3,
+        "Name": "Correct detection of ros11 disk0",
+        "Result": "PASSED"
+      },
+      {
+        "Step": 4,
+        "Name": "Correct detection of ros11 disk1",
+        "Result": "PASSED"
+      },
+      {
+        "Step": 5,
+        "Name": "Correct detection of ros12 disk0",
+        "Result": "PASSED"
+      },
+      {
+        "Step": 6,
+        "Name": "Correct detection of ros12 disk1",
+        "Result": "PASSED"
+      },
+      {
+        "Step": 7,
+        "Name": "Correct detection of ros13 disk0",
+        "Result": "PASSED"
+      },
+      {
+        "Step": 8,
+        "Name": "Correct detection of ros13 disk1",
+        "Result": "PASSED"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1394 @@
+{
+  "AmirSh": {
+    "Total": "18 / 241  (7.5%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-04_18-26-49_BlackPac_DATACO-817-984",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-27_19-15-26_BlackPac_DATACO-817-984",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-27_18-50-53_BlackPac_DATACO-817-984",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44632",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-07_10-06-30_BlackPac_DATACO-1134",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44634",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-07_08-56-31_BlackPac_DATACO-1134",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44629",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-06_19-05-05_BlackPac_DATACO-1137",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44628",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-06_18-41-20_BlackPac_DATACO-1137",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38833",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201224_064513",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38566",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201223_115643",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38567",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201222_161443",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38571",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201222_070159",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37755",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201209_131923",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37748",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201209_110749",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-40356",
+        "Path": "/mobileye/QA_Algo_10/DC_Tests/20-10-08_13-33-35_Alfred",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-27789",
+        "Path": "/mobileye/QA_Algo_09/zacki/20-05-31_20-34-22_Alfred_DATACO-355",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-27924",
+        "Path": "/mobileye/Auto_Veh_09/DC/Israel/20-05-27_14-23-56_Clara_DATACO-294",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-24726",
+        "Path": "/mobileye/QA_Algo_09/Tests/20-03-24_16-16-11_KRQ_No_Comprssion",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-16217",
+        "Path": "/mobileye/QA_Algo_06/DC/Israel/19-10-27_10-53-43_KRQ_DATACO-256",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Amit": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "ChenH": {
+    "Total": "9 / 241  (3.7%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-44815",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-08_10-34-55_BlackPac_DATACO-1137",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44645",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-07_10-18-13_KRQ_DATACO-984",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44644",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-07_10-09-06_KRQ_DATACO-984",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44643",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-07_10-00-58_KRQ_DATACO-984",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/TLV/21-02-25_11-40-18_KRQ_arlozorov1_P0",
+        "Status": "Unknown"
+      },
+      {
+        "Clipstor": "CLIPSTOR-41177",
+        "Path": "/mobileye/DATACO_10/zacki/20-10-08_13-33-35_Alfred",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-29540",
+        "Path": "/mobileye/QA_Algo_09/zacki/20-07-07_15-01-53_Alfred",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-29531",
+        "Path": "/mobileye/QA_Algo_09/zacki/20-07-07_13-41-00_Alfred_DATACO-113",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-13126",
+        "Path": "/mobileye/REM-AV_06/Jerport/Localization/19-08-20_19-46-21_OCT_DATACO-142_Loop1_Night",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Elad": {
+    "Total": "12 / 241  (5.0%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-10361",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-06-26_16_31_54_MZDRSD_Route_443_East",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10341",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-06-26_16_31_41_MZDRSD_Route_6_South_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10340",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-06-26_16_31_27_MZDRSD_Route_6_North_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10360",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-06-26_16_30_15_MZDRSD_Route_443_West",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10359",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-06-26_15_26_31_MZDRSD_Route_443_East",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10339",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-06-26_15_26_17_MZDRSD_Route_6_South",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10338",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-06-26_15_26_00_MZDRSD_Route_6_North",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9727",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-06-26_15_25_44_MZDRSD_Route_443_West",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9471",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-06-21_12_00_17_Yeti_Route_443_East",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9472",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-06-21_10_59_52_Yeti_Route_6_South",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9469",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-06-21_09_22_54_Yeti_Route_6_North",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9470",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-06-21_08_50_36_Yeti_Route_443_West",
+        "Status": "Success"
+      }
+    ]
+  },
+  "EliA": {
+    "Total": "15 / 241  (6.2%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/US_Lion_car05/PKG - 21-03-09_18-26-10_Fusion_CAR05_US_LION_Validation_Upload_21-03-09/21-06-16_12-08-34_Car24",
+        "Status": "Uploading"
+      },
+      {
+        "Clipstor": "CLIPSTOR-47267",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-05-30_14-20-18_Car24_DATACO-1339",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44979",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-04-13_20-55-05_Fusion_MY17_DATACO-1265-1339",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44778",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-04-09_21-12-49_Fusion_MY17_DATACO-1339",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44780",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-04-08_16-30-06_Fusion_MY17_DATACO-1339",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44875",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-04-05_16-02-31_Fusion_MY17_DATACO-1339",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44614",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-04-05_15-25-20_Fusion_MY17_DATACO-1339",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44516",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-04-02_14-52-59_Fusion_MY17_DATACO-1339",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44426",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-03-30_12-04-34_Fusion_MY17_DATACO-1339",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44750",
+        "Path": "/mobileye/DATACO_06/Temp/USA/21-03-20_18-13-48_Fusion_MY17_DATACO-628",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44392",
+        "Path": "/mobileye/DATACO_06/USA/21-03-20_14-46-21_Fusion_MY17_DATACO-1339",
+        "Status": "Closed DMP"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44481",
+        "Path": "/mobileye/DATACO_06/USA/21-03-06_16-53-38_Fusion_MY17_DATACO-1074",
+        "Status": "Closed DMP"
+      },
+      {
+        "Clipstor": "CLIPSTOR-46019",
+        "Path": "/mobileye/DATACO_06/USA/21-03-01_13-22-15_Fusion_MY17_DATACO-1078",
+        "Status": "Closed DMP"
+      },
+      {
+        "Clipstor": "CLIPSTOR-41945",
+        "Path": "/mobileye/DATACO_10/USA/21-02-13_16-15-17_Fusion_MY17_DATACO-1085",
+        "Status": "Closed DMP"
+      },
+      {
+        "Clipstor": "CLIPSTOR-40694",
+        "Path": "/mobileye/DATACO_10/USA/21-01-31_14-56-57_Fusion_MY17_DATACO-960",
+        "Status": "Success"
+      }
+    ]
+  },
+  "GilN": {
+    "Total": "24 / 241  (10.0%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/Jerusalem/21-07-04_13-55-15_Bella_jer_02_givatmordechai",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/Jerusalem/21-07-04_13-37-14_Bella_jer_02_givatmordechai",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/Jerusalem/21-07-04_12-43-42_Bella_jer_entrance_P0",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/TLV/21-06-03_14-36-49_Bella_tlv_06_abarbanel_P0",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/TLV/21-06-02_12-16-50_Bella_tlv_28_tagor",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/TLV/21-05-31_12-53-11_Bella_tlv_21_kikar",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/Black_Pacifica/21-04-18_11-56-24_BlackPac_8MP_Ramot_3Loop",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44820",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-08_13-50-14_KRQ_DATACO-661",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44819",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-08_11-18-21_KRQ_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44833",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-06_09-30-08_BlackPac_DATACO-1135",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44564",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-05_14-33-10_KRQ_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44567",
+        "Path": "/mobileye/Auto_Veh_10/Temp/DC/Israel/21-04-05_14-32-33_KRQ_DATACO-930-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44508",
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/KRQ/21-04-04_12-07-33_KRQ",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44532",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-25_10-16-56_XV_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44560",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-22_11-04-17_KRQ_DATACO-661",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44561",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-22_09-35-43_KRQ_DATACO-661",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38452",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201221_152534",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38611",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201221_103909",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38412",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201220_065954",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37548",
+        "Path": "/mobileye/DATACO_10/Geely_INS_Velodyne/20-12-07_09-47-51_Test_DATACO-939_PNT1_Nlsn_201207_074614",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-31589",
+        "Path": "/mobileye/Auto_Veh_09/DC/Israel/20-08-23_14-47-24_Alfred_DATACO-653",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-13331",
+        "Path": "/mobileye/QA_Algo_06/DC/Israel/19-08-21_10-54-39_KRQ_DATACO-200",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9284",
+        "Path": "/mobileye/QA_Algo_06/DC/Israel/19-06-18_11_53_38_OCT_DATACO-197_Parking14",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37859",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201209_152858",
+        "Status": "Success"
+      }
+    ]
+  },
+  "GilNMichaelC": {
+    "Total": "1 / 241  (0.4%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-37667",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201207_074614",
+        "Status": "Success"
+      }
+    ]
+  },
+  "IdanK": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "Intech": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "Isreal": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "LiorK": {
+    "Total": "1 / 241  (0.4%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-38130",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201213_070730",
+        "Status": "Success"
+      }
+    ]
+  },
+  "LironL": {
+    "Total": "22 / 241  (9.1%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/TestData/Jerusalem/21-06-24_15-03-01_Murphy_Jer_5",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/TLV/21-06-03_14-36-49_Bella_tlv_06_abarbanel_P0",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/TLV/21-06-02_12-16-50_Bella_tlv_28_tagor",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/Temp/TLV/21-05-31_12-53-11_Bella_tlv_21_kikar",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-21_23-45-29_BlackPac_DATACO-1135",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44958",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-12_19-35-41_XV_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44608",
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/KRQ/21-04-06_16-21-13_KRQ_3_Loops",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44589",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-05_18-48-18_XV_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44445",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-25_12-17-01_KRQ_DATACO-984_White_Black",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38682",
+        "Path": "/mobileye/DATACO_10/Geely_INS_Velodyne/20-12-29_10-50-53_Test_DATACO-939_201220_065719",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38421",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201217_084103",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37931",
+        "Path": "/mobileye/DATACO_10/Geely_INS_Velodyne/20-12-15_11-12-54_Test_DATACO-939_PNT1_Nlsn_201214_062411",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37824",
+        "Path": "/mobileye/DATACO_10/Geely_INS_Velodyne/20-12-13_13-35-56_Test_DATACO-939_PNT1_Nlsn_231022_215339",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-15586",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_436/19-10-10_10-56-14_Yeti_Route_436_North_East_G_1",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-13120",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Night_Localization/19-08-20_21-10-43_Yeti_Route_5_20_431_N_1",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-12055",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_5/19-08-05_13-47-34_OCTBlack_Route_5_West_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10706",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_5/19-07-14_12_31_07_Yeti_Route_5_East_2",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10392",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_431/19-07-08_09_23_34_Yeti_Route_431_West",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10266",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_431/19-07-05_10_47_27_Yeti_Route_431_East_3",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10197",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-07-04_09_45_15_Yeti_Route_443_East_2_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9441",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-06-20_15_00_22_Yeti_Route_443_East",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38166",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_231022_215339",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Markl": {
+    "Total": "19 / 241  (7.9%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-21_07-56-18_BlackPac_DATACO-1035",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-20_11-55-19_BlackPac_DATACO-1035",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44963",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-13_10-19-36_KRQ_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44822",
+        "Path": "/mobileye/AV_Mapping_09/Jerusalem/21-04-09_13-35-11_Bella_jer_hotzvim_P0",
+        "Status": "Closed DMP"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44812",
+        "Path": "/mobileye/AV_Mapping_09/Temp/Jerusalem/21-04-09_13-34-53_Bella_jer_hotzvim_P0",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44813",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-08_21-24-23_BlackPac_DATACO-1134",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44814",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-08_19-24-12_BlackPac_DATACO-1134",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/TLV/21-02-27_13-33-08_Bella_arlozorov3_P0",
+        "Status": "Unknown"
+      },
+      {
+        "Clipstor": "CLIPSTOR-41063",
+        "Path": "/mobileye/AV_Mapping_09/TLV/21-02-06_11-30-54_Bella_tlv_redo_P4",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38837",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201224_120756",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38631",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201223_041738",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38142",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201216_044738",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38165",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201215_073708",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38151",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201213_073512",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37477",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201203_145312",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22035",
+        "Path": "/mobileye/Auto_Veh_09/DC/Israel/20-02-04_09-13-14_Bella_DATACO-288_road_1",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-20410",
+        "Path": "/mobileye/Auto_Veh_09/Mapping/20-01-03_16-34-17_Bella_DATACO-225_routes1A_B_1loopL",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37522",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201204_063315",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37591",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201205_083412",
+        "Status": "Success"
+      }
+    ]
+  },
+  "MarklAmirSh": {
+    "Total": "1 / 241  (0.4%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-38568",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201222_120946",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Matan": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "MatanG": {
+    "Total": "2 / 241  (0.8%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-37577",
+        "Path": "/mobileye/QA_Algo_10/Calibration/Chopin/20-12-08_12-13-54_Chopin_validation_wono",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37292",
+        "Path": "/mobileye/QA_Algo_10/Calibration/Chopin/20-12-02_14-03-39_Chopin_GPS_Test_wono",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Meir": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "MeirG": {
+    "Total": "8 / 241  (3.3%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-44963",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-13_10-19-36_KRQ_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44820",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-08_13-50-14_KRQ_DATACO-661",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44819",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-08_11-18-21_KRQ_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44549",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-05_10-00-23_XV_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44554",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-24_09-32-45_XV_DATACO-1101",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44560",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-22_11-04-17_KRQ_DATACO-661",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44561",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-22_09-35-43_KRQ_DATACO-661",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-43901",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-17_19-15-25_BlackPac_DATACO-1135",
+        "Status": "Open Clipstor"
+      }
+    ]
+  },
+  "MichaelC": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "Moti": {
+    "Total": "2 / 241  (0.8%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-48945",
+        "Path": "/mobileye/QA_Algo_10/Temp/Bundle_Test/4.21.05/CF0/21-07-07_13-36-45_BMWX5",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44413",
+        "Path": "/mobileye/QA_Algo_10/Temp/Bundle_Test/4.20.10/RC1/21-03-31_13-06-39_MZD3",
+        "Status": "Open Clipstor"
+      }
+    ]
+  },
+  "Nati": {
+    "Total": "2 / 241  (0.8%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-31010",
+        "Path": "/mobileye/QA_Algo_09/TestTrack/BWR/RoshHaain/AEB/20-08-09_13-41-02_XV_INS_RS",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-30445",
+        "Path": "/mobileye/QA_Algo_09/TestTrack/Masada/AEB/2020_07_26/20-07-26_23-38-10_XV_RobotSense",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Nir": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "OmerB": {
+    "Total": "3 / 241  (1.2%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-28627",
+        "Path": "/mobileye/QA_Algo_09/DC/USA/20-06-08_14-07-50_Fusion_MY17_DATACO-355_8MP_SBS_with_Wono_for_Road_Yellow",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-29123",
+        "Path": "/mobileye/QA_Algo_09/DC/USA/20-06-08_14-07-50_Fusion_MY17_DATACO-447_Yellow_Lane",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-26940",
+        "Path": "/mobileye/QA_Algo_09/DC/USA/20-05-05_14-35-29_Fusion_MY17_DATACO-355_Honda_Rte_Lp3_SBS",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Omri": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "OmriM": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "Other": {
+    "Total": "18 / 241  (7.5%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AWS_10/Temp/ME81/2021_03_25_2/21-03-25_10-38-19_OCT",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38446",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201222_154441",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38189",
+        "Path": "/mobileye/DATACO_10/Japan/20-12-20_09-46-20_NSNJP2_DATACO-637",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37863",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201209_153206",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37880",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201209_104439",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37362",
+        "Path": "/mobileye/DATACO_10/Japan/20-10-15_15-57-51_NSNJP2_DATACO-637",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-33722",
+        "Path": "/mobileye/QA_Algo_10/Field_Test/Leo/20-09-30_10-34-00_Leo_Pendulum_all_sectors",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-28798",
+        "Path": "/mobileye/Auto_Veh_09/DC/Japan/20-06-15_12-51-03_NSNJP2_DATACO-348_Rt1_Lp2_Left",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-28797",
+        "Path": "/mobileye/Auto_Veh_09/DC/Japan/20-06-15_08-26-38_NSNJP2_DATACO-348_Rt2_Lp1_Right",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-26543",
+        "Path": "/mobileye/QA_Algo_09/Field_Tests/EPM5/20-05-05_12-09-32_BMWX5_CPLC_20_NoFire",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-26536",
+        "Path": "/mobileye/QA_Algo_09/Field_Tests/EPM5/20-05-05_10-00-24_BMWX5_WMBC",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-25276",
+        "Path": "/mobileye/QA_Algo_09/DC/USA/20-03-26_21-14-54_Fusion_MY17_DATACO-355_Night",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-23788",
+        "Path": "/mobileye/QA_Algo_09/DC/USA/20-03-08_01-53-22_Pacifica_MY17_DATACO-106-355",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-21696",
+        "Path": "/mobileye/QA_Algo_09/DC/USA/20-01-27_14-57-33_REM02_DATACO-324",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-16876",
+        "Path": "/mobileye/QA_Algo_06/DC/FromUSA/19-10-08_16-37-25_Car24_DATACO-106-125-146_2",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-14497",
+        "Path": "/mobileye/QA_Algo_06/DC/FromUSA/19-08-15_20-34-34_Car14_DATACO-103_TP_HouseJ",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-12520",
+        "Path": "/mobileye/QA_Algo_06/DC/FromUSA/19-08-14_15-24-40_REM01_DATACO-106",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-12733",
+        "Path": "/mobileye/QA_Algo_06/DC/FromUSA/19-05-31_10-40-15_REM02_DATACO-206",
+        "Status": "Success"
+      }
+    ]
+  },
+  "OzK": {
+    "Total": "1 / 241  (0.4%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Europe/21-04-10_21-06-55_Beethoven_DATACO-652_Trudering1_Night",
+        "Status": "Temp"
+      }
+    ]
+  },
+  "Refael": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "ShaiNA": {
+    "Total": "13 / 241  (5.4%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/Murphy/21-06-01_16-20-13_Murphy_3_Loops",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-46760",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-23_11-15-49_XV_DATACO-1394",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-46768",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-20_10-09-45_XV_DATACO-1394",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44973",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-14_09-02-08_KRQ_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44632",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-07_10-06-30_BlackPac_DATACO-1134",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44634",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-07_08-56-31_BlackPac_DATACO-1134",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44608",
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/KRQ/21-04-06_16-21-13_KRQ_3_Loops",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/AV_Mapping_09/TLV/21-02-25_11-40-18_KRQ_arlozorov1_P0",
+        "Status": "Unknown"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38390",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201220_153044",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37441",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201130_073458",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22389",
+        "Path": "/mobileye/Auto_Veh_09/DC/Israel/20-02-05_10-01-27_Clara_DATACO-294",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-20782",
+        "Path": "/mobileye/Auto_Veh_09/DC/Israel/20-01-12_10-32-43_Clara_DATACO-260-294-309",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-11405",
+        "Path": "/mobileye/QA_Algo_06/DC/Israel/19-07-22_10-56-02_KRQ_DATACO-235_50Lights",
+        "Status": "Success"
+      }
+    ]
+  },
+  "ShayS": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "ShimonH": {
+    "Total": "14 / 241  (5.8%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-46759",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-24_00-18-22_BlackPac_DATACO-984",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-46758",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-23_23-07-30_BlackPac_DATACO-984",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-46757",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-23_21-32-15_BlackPac_DATACO-984",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-46756",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-23_20-20-36_BlackPac_DATACO-984",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-02_18-48-31_BlackPac_DATACO-817-984",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-25_18-46-15_BlackPac_DATACO-1035",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44849",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-11_20-09-32_BlackPac_DATACO-1134",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44848",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-11_19-50-54_BlackPac_DATACO-1134",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44445",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-25_12-17-01_KRQ_DATACO-984_White_Black",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38447",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201220_135658",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38264",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Mega_201216_152231",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37930",
+        "Path": "/mobileye/DATACO_10/Geely_INS_Velodyne/20-12-15_11-25-12_Test_DATACO-939_PNT1_Nlsn_201214_150131",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37610",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201206_163850",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37416",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201201_080107",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Shon": {
+    "Total": "4 / 241  (1.7%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-10351",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_431/19-07-08_10_46_37_Rapid_Route_431_West_1",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9894",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_443/19-06-30_11_57_14_OctBlack_RSD_Only_443_East",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9893",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-06-30_11_56_09_OctBlack_RSD_Only_6_South",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-9892",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-06-30_11_53_45_OctBlack_RSD_Only_6_North",
+        "Status": "Success"
+      }
+    ]
+  },
+  "TOTAL": "241 / 14877  (1.6%)",
+  "Timofay": {
+    "Total": "2 / 241  (0.8%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-10394",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_431/19-07-08_09_25_42_MZDRSD_Route_431_West",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10211",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-07-04_15_56_04_MZDRSD_Route_6_North_2_G",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Timofei": {
+    "Total": "4 / 241  (1.7%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-25_18-46-15_BlackPac_DATACO-1035",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44713",
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/Black_Pacifica/21-04-07_14-59-52_BlackPac_3_Loops",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/QA_Algo_10/Temp/TestTrack/Israel/21-03-11_14-56-30_BlackPac_AEB_Velodyne",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-18106",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_1_9_Patches/19-11-24_15-33-41_OCTSilver_Route_1_9_Patches_Take_2_4",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Yehuda": {
+    "Total": "17 / 241  (7.1%)",
+    "cases": [
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/Bella/21-06-07_08-42-45_Bella_3_Loops",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-46760",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-05-23_11-15-49_XV_DATACO-1394",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44815",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-08_10-34-55_BlackPac_DATACO-1137",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44606",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-04-06_10-35-59_XV_DATACO-1006",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44558",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-25_13-29-45_BlackPac_DATACO-1136",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44557",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-25_12-55-08_BlackPac_DATACO-1136",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-18_08-48-50_BlackPac_DATACO-1134-1135-1136",
+        "Status": "Temp"
+      },
+      {
+        "Clipstor": "CLIPSTOR-43896",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-16_18-29-08_BlackPac_DATACO-1134-1135-1136",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44559",
+        "Path": "/mobileye/DATACO_06/Temp/Israel/21-03-14_17-29-54_KRQ_DATACO-661",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38867",
+        "Path": "/mobileye/DATACO_10/Geely_INS_Velodyne/21-01-03_14-00-14_Test_DATACO-939_PNT1_Mega_210103_090745",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38419",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201217_152641",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37938",
+        "Path": "/mobileye/DATACO_10/Geely_INS_Velodyne/20-12-15_13-19-43_Test_DATACO-939PNT1_Nlsn_201215_063851",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37639",
+        "Path": "/mobileye/DATACO_10/Geely_INS_Velodyne/20-12-09_12-55-49_Test_DATACO-939_PNT1_Nlsn_201208_154904",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37807",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201208_154904",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-36614",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201118_160003",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-18980",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/ME8_Telit_Experiment_Take_4/19-12-03_11-02-59_OCTSilver_ME8_Telit_Loop_5",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38126",
+        "Path": "/mobileye/Pinta_10/DC/Israel/PNT1_Nlsn_201215_063851",
+        "Status": "Success"
+      }
+    ]
+  },
+  "Yitzchak": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "YosefC": {
+    "Total": "8 / 241  (3.3%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-44713",
+        "Path": "/mobileye/QA_Algo_10/Temp/Calibration/Black_Pacifica/21-04-07_14-59-52_BlackPac_3_Loops",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-31061",
+        "Path": "/mobileye/QA_Algo_09/DC/Israel/20-08-10_11-57-46_OCTRNT_DATACO-610",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-30445",
+        "Path": "/mobileye/QA_Algo_09/TestTrack/Masada/AEB/2020_07_26/20-07-26_23-38-10_XV_RobotSense",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-24807",
+        "Path": "/mobileye/QA_Algo_09/Calibration/Leo/INS_TEST/20-03-25_10-43-56_Leo_Ramot_3Loops",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-19931",
+        "Path": "/mobileye/QA_Algo_09/DC/Israel/19-12-25_10-38-03_KRQ_DATACO-228",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-19489",
+        "Path": "/mobileye/Auto_Veh_09/DC/Israel/19-12-05_14-30-25_Clara_DATACO-260-294_Jer9_3Loops_12flashingLights",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-11882",
+        "Path": "/mobileye/QA_Algo_06/DC/Israel/19-07-22_14-33-59_KRQ_DATACO-235_45Lights",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-10366",
+        "Path": "/mobileye/QA_Algo_06/DC/Israel/19-07-08_11_02_40_KRQ_DATACO-235",
+        "Status": "Success"
+      }
+    ]
+  },
+  "YossefM": {
+    "Total": "16 / 241  (6.6%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-25084",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/ME8_3/20-03-30_11-54-45_Rapid_New_JER9_ME8_R_4",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-24392",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_436/20-03-17_10-59-07_Rapid_Route_436_G_9",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-23893",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Streets/20-03-06_10-47-43_Rapid_New_Layer_10_G_2",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-23638",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Streets/20-03-03_09-42-36_Rapid_New_Layer_6_3_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22072",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_13-07-39_Rapid_Route_6_North_10_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22071",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_12-41-31_Rapid_Route_6_North_9_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22070",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_12-21-00_Rapid_Route_6_North_8_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22069",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_11-58-16_Rapid_Route_6_North_7_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22067",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_11-31-18_Rapid_Route_6_North_6_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22065",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_11-01-57_Rapid_Route_6_North_5_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22063",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_10-31-55_Rapid_Route_4",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22061",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_10-05-35_Rapid_Route_6_North_3_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22059",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_09-34-11_Rapid_Route_6_North_2_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-22058",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Route_6/20-01-16_08-59-52_Rapid_Route_6_North_1_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-20553",
+        "Path": "/mobileye/REM-AV_09/RSD_Fleet/Streets/20-01-09_08-21-20_Rapid_Layer_2_G",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-13615",
+        "Path": "/mobileye/REM-AV_06/RSD_Fleet/Route_6/19-09-01_16-09-00_Yeti_Route_6_South",
+        "Status": "Success"
+      }
+    ]
+  },
+  "ZZZZZZZ": {
+    "Total": "0 / 241  (0.0%)",
+    "cases": []
+  },
+  "ilyad": {
+    "Total": "5 / 241  (2.1%)",
+    "cases": [
+      {
+        "Clipstor": "CLIPSTOR-44891",
+        "Path": "/mobileye/QA_Algo_10/Temp/Bundle_Test/4.20.10/CF3/21-04-13_09-35-39_MZD3",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": "CLIPSTOR-44551",
+        "Path": "/mobileye/QA_Algo_10/Temp/Field_Test/TSR/21-04-04_10-38-22_MZD3",
+        "Status": "Open Clipstor"
+      },
+      {
+        "Clipstor": null,
+        "Path": "/mobileye/QA_Algo_10/Temp/Bundle_Test/4.20.12/CF0/21-02-25_11-33-09_MZD3",
+        "Status": "Uploading"
+      },
+      {
+        "Clipstor": "CLIPSTOR-38228",
+        "Path": "/mobileye/QA_Algo_10/Bundle_Test/4.20.8/CF2/20-12-20_14-01-34_BMWX5_OpenOnline",
+        "Status": "Success"
+      },
+      {
+        "Clipstor": "CLIPSTOR-37167",
+        "Path": "/mobileye/QA_Algo_10/Bundle_Test/4.20.8/CF2/20-12-01_11-31-36_BMWX5",
+        "Status": "Success"
+      }
+    ]
+  }
+}

@@ -1,0 +1,518 @@
+VERSION "7"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: EyeQ4 ADC
+
+
+BO_ 2147483680 NIO_General_0x20: 126 EyeQ4
+ SG_ Headers_reserved_msg_header : 0|8@1+ (1,0) [0|0] "NA" ADC
+ SG_ Headers_sync_GlobalFrameIndex : 8|32@1+ (1,0) [0|4294967295] "NA" ADC
+ SG_ Headers_sync_index : 40|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Headers_frameTimeStamp : 48|32@1+ (1,0) [0|4294967295] "msec" ADC
+ SG_ Headers_videoIndex : 80|32@1+ (1,0) [0|4294967295] "counter" ADC
+ SG_ General_protocol_version : 112|8@1+ (1,0) [7|7] "int" ADC
+ SG_ HLB_Reason_Preceding : 120|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Preceding_Grace : 121|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Oncoming : 122|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Oncoming_Grace : 123|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Street_Light : 124|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Street_Light_Grace : 125|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Lit_Night : 126|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Lit_Night_US : 127|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Low_speed : 128|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Bright_Scene : 129|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Sharp_Curve : 130|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Reason_Load_Balance : 131|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_decision : 132|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ HLB_Running_Mode : 133|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ HLB_electricGridFrequency : 135|2@1+ (1,0) [0|3] "enum" ADC
+ SG_ Reason_for_HLB_Inactive : 137|4@1+ (1,0) [0|15] "Enum" ADC
+ SG_ ACC_LeftCloseRangeCutIn : 141|1@1+ (1,0) [0|1] "enum" ADC
+ SG_ ACC_RightCloseRangeCutIn : 142|1@1+ (1,0) [0|1] "enum" ADC
+ SG_ ACC_CIPV_FreeSpace : 143|2@1+ (1,0) [0|3] "enum" ADC
+ SG_ ACC_L_CCI_frontZ : 145|12@1+ (0.01,0) [0|25] "meters" ADC
+ SG_ ACC_L_CCI_frontX : 157|10@1- (0.01,0) [-5|5] "meters" ADC
+ SG_ ACC_L_CCI_backZ : 167|12@1+ (0.01,0) [0|25] "meters" ADC
+ SG_ ACC_L_CCI_backX : 179|10@1- (0.01,0) [-5|5] "meters" ADC
+ SG_ ACC_L_CCI_longitudinal_speed : 189|11@1+ (0.05,0) [0|102.35] "m/s" ADC
+ SG_ ACC_L_CCI_hasCut : 200|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ ACC_L_CCI_lateral_speed : 201|8@1- (0.05,0) [-6.4|6.35] "m/s" ADC
+ SG_ ACC_L_CCI_ttc : 209|9@1- (0.05,0) [-10|10] "seconds" ADC
+ SG_ ACC_L_CCI_hasCutLaneMark : 218|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ ACC_R_CCI_frontZ : 219|12@1+ (0.01,0) [0|25] "meters" ADC
+ SG_ ACC_R_CCI_frontX : 231|10@1- (0.01,0) [-5|5] "meters" ADC
+ SG_ ACC_R_CCI_backZ : 241|12@1+ (0.01,0) [0|25] "meters" ADC
+ SG_ ACC_R_CCI_backX : 253|10@1- (0.01,0) [-5|5] "meters" ADC
+ SG_ ACC_R_CCI_longitudinal_speed : 263|11@1+ (0.05,0) [0|102.35] "m/s" ADC
+ SG_ ACC_R_CCI_hasCut : 274|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ ACC_R_CCI_lateral_speed : 275|8@1- (0.05,0) [-6.4|6.35] "m/s" ADC
+ SG_ ACC_R_CCI_ttc : 283|9@1- (0.05,0) [-10|10] "seconds" ADC
+ SG_ ACC_R_CCI_hasCutLaneMark : 292|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Gen_autofixEvent : 293|2@1+ (1,0) [0|3] "enum" ADC
+ SG_ Gen_currentCalibrationIsOK_yaw : 295|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Gen_dayNightDusk : 296|2@1+ (1,0) [0|2] "enum" ADC
+ SG_ Gen_drivingSide : 298|1@1+ (1,0) [0|1] "enum" ADC
+ SG_ Gen_drivingSideEvt : 299|1@1+ (1,0) [0|1] "enum" ADC
+ SG_ Gen_Exposure_Type : 300|1@1+ (1,0) [0|1] "enum" ADC
+ SG_ Gen_regionCode : 301|4@1+ (1,0) [0|10] "enum" ADC
+ SG_ Gen_regionCodeEvent : 305|1@1+ (1,0) [0|1] "enum" ADC
+ SG_ Gen_autofixHorizon : 306|8@1+ (1,-40) [-40|90] "px" ADC
+ SG_ Gen_autofixYaw : 314|8@1+ (1,-40) [-40|40] "px" ADC
+ SG_ Gen_Protocol_Delay : 322|9@1+ (0.001,0) [0|0.511] "sec" ADC
+ SG_ FS_autofixOutOfCalibHorizon : 331|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ FS_autofixOutOfCalibYAW : 332|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Gen_reserved_0 : 333|3@1+ (1,0) [0|1] "NA" ADC
+ SG_ FS_blurredImage : 336|2@1+ (1,0) [0|3] "ENUM" ADC
+ SG_ FS_partialBlockage : 338|3@1+ (1,-1) [-1|3] "ENUM" ADC
+ SG_ FS_fullBlockage : 341|3@1+ (1,-1) [-1|3] "ENUM" ADC
+ SG_ FS_splashes : 344|2@1+ (1,0) [0|3] "ENUM" ADC
+ SG_ FS_selfGlare : 346|2@1+ (1,0) [0|3] "ENUM" ADC
+ SG_ FS_sunRay : 348|2@1+ (1,0) [0|3] "ENUM" ADC
+ SG_ FS_lowSun : 350|2@1+ (1,0) [0|3] "ENUM" ADC
+ SG_ FS_out_of_focus : 352|3@1+ (1,-1) [-1|3] "ENUM" ADC
+ SG_ FS_outOfCalibOffsetHorizon : 355|8@1+ (1,-120) [-120|100] "px" ADC
+ SG_ FS_outOfCalibSignsNumHorizon : 363|8@1+ (1,0) [0|255] "counter" ADC
+ SG_ FS_outOfCalibOffsetYaw : 371|8@1+ (1,-120) [-120|100] "px" ADC
+ SG_ FS_outOfCalibSignsNumYaw : 379|8@1+ (1,0) [0|255] "counter" ADC
+ SG_ FS_TSR_outOfCalib_mode : 387|2@1+ (1,0) [0|3] "enum" ADC
+ SG_ FS_forzenWindshield_bool : 389|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ FS_frozenWindshield : 390|2@1+ (1,0) [0|3] "ENUM" ADC
+ SG_ FS_fog : 392|2@1+ (1,0) [0|3] "ENUM" ADC
+ SG_ FS_rain : 394|2@1+ (1,0) [0|3] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager0 : 396|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager1 : 397|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager2 : 398|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager3 : 399|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager4 : 400|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager5 : 401|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager6 : 402|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager7 : 403|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager8 : 404|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager9 : 405|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager10 : 406|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager11 : 407|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager12 : 408|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager13 : 409|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager14 : 410|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager15 : 411|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager16 : 412|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager17 : 413|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager18 : 414|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager19 : 415|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager20 : 416|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager21 : 417|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager22 : 418|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager23 : 419|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager24 : 420|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager25 : 421|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager26 : 422|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager27 : 423|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager28 : 424|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager29 : 425|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager30 : 426|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager31 : 427|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager32 : 428|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager33 : 429|1@1+ (1,0) [0|1] "ENUM" ADC
+ SG_ ASDM_safety_Diagnostic_Manager34 : 430|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager35 : 431|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager36 : 432|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager37 : 433|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager38 : 434|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager39 : 435|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager40 : 436|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager41 : 437|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager42 : 438|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager43 : 439|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager44 : 440|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager45 : 441|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager46 : 442|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager47 : 443|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager48 : 444|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager49 : 445|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager50 : 446|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager51 : 447|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager52 : 448|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager53 : 449|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager54 : 450|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager55 : 451|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager56 : 452|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager57 : 453|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager58 : 454|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager59 : 455|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager60 : 456|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager61 : 457|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager62 : 458|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASDM_safety_Diagnostic_Manager63 : 459|1@1+ (1,0) [0|1] "NA" ADC
+ SG_ ASCR_challenge_Identifier : 460|8@1+ (1,0) [0|255] "counter" ADC
+ SG_ ASCR_challenge_Response1 : 468|8@1+ (1,0) [0|255] "counter" ADC
+ SG_ ASCR_challenge_Response2 : 476|8@1+ (1,0) [0|255] "counter" ADC
+ SG_ ASCR_challenge_Response3 : 484|8@1+ (1,0) [0|255] "counter" ADC
+ SG_ ASCR_challenge_Response4 : 492|8@1+ (1,0) [0|255] "counter" ADC
+ SG_ VD_RTA : 500|1@1+ (1,0) [0|1] "enum" ADC
+ SG_ VD_FCWSuppressionReasons_setA : 501|24@1+ (1,0) [0|16777215] "bitwise" ADC
+ SG_ VD_alertPattern_setA : 525|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ VD_AEBSuppressionReasons_setA : 541|16@1+ (1,0) [0|65535] "bitwize" ADC
+ SG_ VD_FCWSuppressionReasons_setB : 557|24@1+ (1,0) [0|16777215] "bitwise" ADC
+ SG_ VD_alertPattern_setB : 581|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ VD_AEBSuppressionReasons_setB : 597|16@1+ (1,0) [0|65535] "bitwize" ADC
+ SG_ VD_FCWSuppressionReasons_setC : 613|24@1+ (1,0) [0|16777215] "bitwise" ADC
+ SG_ VD_alertPattern_setC : 637|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ VD_AEBSuppressionReasons_setC : 653|16@1+ (1,0) [0|65535] "bitwize" ADC
+ SG_ VD_FCWSuppressionReasons_setD : 669|24@1+ (1,0) [0|16777215] "bitwise" ADC
+ SG_ VD_alertPattern_setD : 693|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ VD_AEBSuppressionReasons_setD : 709|16@1+ (1,0) [0|65535] "bitwize" ADC
+ SG_ VD_FCWSuppressionReasons_setE : 725|24@1+ (1,0) [0|16777215] "bitwise" ADC
+ SG_ VD_alertPattern_setE : 749|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ VD_AEBSuppressionReasons_setE : 765|16@1+ (1,0) [0|65535] "bitwize" ADC
+ SG_ VD_FCWSuppressionReasons_setF : 781|24@1+ (1,0) [0|16777215] "bitwise" ADC
+ SG_ VD_alertPattern_setF : 805|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ VD_AEBSuppressionReasons_setF : 821|16@1+ (1,0) [0|65535] "bitwize" ADC
+ SG_ PD_alertPattern_L1 : 837|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ PD_AEB_suppressReasons_L1 : 853|8@1+ (1,0) [0|255] "bitwize" ADC
+ SG_ PD_alertPattern_L2 : 861|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ PD_AEB_suppressReasons_L2 : 877|8@1+ (1,0) [0|255] "bitwize" ADC
+ SG_ PD_alertPattern_L3 : 885|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ PD_AEB_suppressReasons_L3 : 901|8@1+ (1,0) [0|255] "bitwize" ADC
+ SG_ PD_alertPattern_L4 : 909|16@1+ (1,0) [0|65535] "enum" ADC
+ SG_ PD_AEB_suppressReasons_L4 : 925|8@1+ (1,0) [0|255] "bitwize" ADC
+ SG_ HW_FDI_Indication_Level : 933|4@1+ (1,0) [0|8] "Enum" ADC
+ SG_ HW_FollowingDistHighResolution : 937|12@1+ (0.1,0) [0|255] "m" ADC
+ SG_ HW_FollowingTime : 949|12@1+ (0.1,0) [0|10] "sec" ADC
+ SG_ HW_SuppressionReasons : 961|16@1+ (1,0) [0|65535] "Bitwize" ADC
+ SG_ HW_Alert : 977|1@1+ (1,0) [0|1] "enum" ADC
+ SG_ PD_Alert_Type : 978|4@1+ (1,0) [0|3] "enum" ADC
+ SG_ general_padding_resereved : 982|10@1+ (1,0) [0|1] "NA" ADC
+ SG_ CRC_General : 992|16@1+ (1,0) [0|65535] "NA" ADC
+
+
+
+
+
+CM_ SG_ 2147483680 Headers_reserved_msg_header "To avoid confusion with MESP messages";
+CM_ SG_ 2147483680 Headers_sync_GlobalFrameIndex "frame index from brain";
+CM_ SG_ 2147483680 Headers_videoIndex "frame index from camera";
+CM_ SG_ 2147483680 ACC_L_CCI_frontZ "longitudinal distance to the front of the cutting vehicle, with respect to Host vehicle's front bumper middle point";
+CM_ SG_ 2147483680 ACC_L_CCI_frontX "lateral distance to the front of the cutting vehicle, with respect to Host vehicle's front bumper middle point";
+CM_ SG_ 2147483680 ACC_L_CCI_backZ "longitudinal distance to the back of the cutting vehicle, with respect to Host vehicle's front bumper middle point";
+CM_ SG_ 2147483680 ACC_L_CCI_backX "lateral distance to the back of the cutting vehicle, with respect to Host vehicle's front bumper middle point";
+CM_ SG_ 2147483680 ACC_L_CCI_longitudinal_speed "absolute longitudinal speed of cutting vehicle";
+CM_ SG_ 2147483680 ACC_L_CCI_hasCut "0 - false. 1- true (Cutting vehicle has cut host's predicted path and/or  host's lane mark) ";
+CM_ SG_ 2147483680 ACC_L_CCI_lateral_speed "absolute lateral speed of cutting vehicle";
+CM_ SG_ 2147483680 ACC_L_CCI_ttc "time until host vehicle path (not lane mark) will be cut by cutting vehicle. 0 means cutting vehicle has entered host's path.";
+CM_ SG_ 2147483680 ACC_L_CCI_hasCutLaneMark "true when detected close cutting in vehicle has traversed a lane mark";
+CM_ SG_ 2147483680 ACC_R_CCI_frontZ "longitudinal distance to the front of the cutting vehicle, with respect to Host vehicle's front bumper middle point";
+CM_ SG_ 2147483680 ACC_R_CCI_frontX "lateral distance to the front of the cutting vehicle, with respect to Host vehicle's front bumper middle point";
+CM_ SG_ 2147483680 ACC_R_CCI_backZ "longitudinal distance to the back of the cutting vehicle, with respect to Host vehicle's front bumper middle point";
+CM_ SG_ 2147483680 ACC_R_CCI_backX "lateral distance to the back of the cutting vehicle, with respect to Host vehicle's front bumper middle point";
+CM_ SG_ 2147483680 ACC_R_CCI_longitudinal_speed "absolute longitudinal speed of cutting vehicle";
+CM_ SG_ 2147483680 ACC_R_CCI_hasCut "0 - false. 1- true (Cutting vehicle has cut host's predicted path and/or  host's lane mark) ";
+CM_ SG_ 2147483680 ACC_R_CCI_lateral_speed "absolute lateral speed of cutting vehicle";
+CM_ SG_ 2147483680 ACC_R_CCI_ttc "time until host vehicle path (not lane mark) will be cut by cutting vehicle. 0 means cutting vehicle has entered host's path.";
+CM_ SG_ 2147483680 ACC_R_CCI_hasCutLaneMark "true when detected close cutting in vehicle has traversed a lane mark";
+CM_ SG_ 2147483680 Gen_regionCodeEvent "Indicates whther region code signal value has changed from previous frame, or not";
+CM_ SG_ 2147483680 FS_outOfCalibOffsetHorizon "-120 is the default value. and actual range should be (-)100-100";
+CM_ SG_ 2147483680 FS_outOfCalibOffsetYaw "-120 is the default value. and actual range should be (-)100-100";
+CM_ SG_ 2147483680 FS_fog "Indicates that the Failsafe has been activated";
+CM_ SG_ 2147483680 FS_rain "Indicates that the Failsafe has been activated";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager0 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager1 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager2 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager3 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager4 "Significant deviation of yaw and Horizon -  Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager5 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager6 "Significant difference of target TTC calculated by 2 different modules - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager7 "Significant difference of target position calculated by 2 different modules - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager8 "Significant difference of target position calculated by 2 different modules(other modules than DC_010) - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager9 "ROI (out of vehicle detection) overlap difference to FCW_validation-ROI - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager10 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager11 "Safety input signals CRC doesn't match - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager12 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager13 "Last valid message associated with ego-data signal is older than the defined maximal latency on this signal (this is also true when OK flags indicate invalid values) - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager14 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager15 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager16 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager17 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager18 "Internal image protection failure - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager19 "Image grabbing timestamp indicates missed image - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager20 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager21 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager22 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager23 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager24 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager25 "2 FCV mechanisms indicate different results for the object - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager26 "The EyeQ3 SW will perform a CRC check on the program section of the code in DDR - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager27 "AEB decision maker double run results don't match - Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager28 "This is a safety diagnostic manager";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager29 "Input signals data RFC not as expected -  Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager30 "timestamp and framenumber invalid -  Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager31 "Internal data structures CRC mismatch -  Go into safe state";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager32 "NO_MSG_ARRIVED_ERR";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager33 "CORRUPTED_VEHICLE_INFO_INPUT_SIGNALS";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager34 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager35 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager36 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager37 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager38 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager39 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager40 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager41 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager42 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager43 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager44 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager45 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager46 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager47 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager48 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager49 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager50 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager51 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager52 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager53 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager54 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager55 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager56 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager57 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager58 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager59 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager60 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager61 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager62 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASDM_safety_Diagnostic_Manager63 "This is a safety diagnostic manager signal. Refer to the Safety Critical Fault Matrix for more details.";
+CM_ SG_ 2147483680 ASCR_challenge_Identifier "This is a challenge identifier";
+CM_ SG_ 2147483680 ASCR_challenge_Response1 "This is a Challenge Response ";
+CM_ SG_ 2147483680 ASCR_challenge_Response2 "This is a Challenge Response ";
+CM_ SG_ 2147483680 ASCR_challenge_Response3 "This is a Challenge Response ";
+CM_ SG_ 2147483680 ASCR_challenge_Response4 "This is a Challenge Response ";
+CM_ SG_ 2147483680 VD_RTA "State RTA (Ready To Assist) for setA";
+CM_ SG_ 2147483680 VD_FCWSuppressionReasons_setA "Feature related reason for suppressing the Alert SetA for Vehicle/Motorcycle";
+CM_ SG_ 2147483680 VD_alertPattern_setA "Alert released for SetA for Vehicle/Motorcycle as a confirmation pattern";
+CM_ SG_ 2147483680 VD_FCWSuppressionReasons_setB "Feature related reason for suppressing the Alert SetB for Vehicle/Motorcycle";
+CM_ SG_ 2147483680 VD_alertPattern_setB "Alert released for SetB for Vehicle/Motorcycle as a confirmation pattern";
+CM_ SG_ 2147483680 VD_FCWSuppressionReasons_setC "Feature related reason for suppressing the Alert SetC for Vehicle/Motorcycle";
+CM_ SG_ 2147483680 VD_alertPattern_setC "Alert released for SetC for Vehicle/Motorcycle as a confirmation pattern";
+CM_ SG_ 2147483680 VD_FCWSuppressionReasons_setD "Feature related reason for suppressing the Alert SetD for Vehicle/Motorcycle";
+CM_ SG_ 2147483680 VD_alertPattern_setD "Alert released for SetD for Vehicle/Motorcycle as a confirmation pattern";
+CM_ SG_ 2147483680 VD_FCWSuppressionReasons_setE "Feature related reason for suppressing the Alert Set E for Vehicle/Motorcycle";
+CM_ SG_ 2147483680 VD_alertPattern_setE "Alert released for SetE for Vehicle/Motorcycle as a confirmation pattern";
+CM_ SG_ 2147483680 VD_FCWSuppressionReasons_setF "Feature related reason for suppressing the Alert SetA for Vehicle/Motorcycle";
+CM_ SG_ 2147483680 VD_alertPattern_setF "Alert released for SetA for Vehicle/Motorcycle as a confirmation pattern";
+CM_ SG_ 2147483680 PD_alertPattern_L1 "Confirmation pattern";
+CM_ SG_ 2147483680 PD_AEB_suppressReasons_L1 "Feature related reason for suppressing the Alert SetA for Pedestrian/Cyclist";
+CM_ SG_ 2147483680 PD_alertPattern_L2 "Confirmation pattern";
+CM_ SG_ 2147483680 PD_AEB_suppressReasons_L2 "Feature related reason for suppressing the Alert SetB for Pedestrian/Cyclist";
+CM_ SG_ 2147483680 PD_alertPattern_L3 "Confirmation pattern";
+CM_ SG_ 2147483680 PD_AEB_suppressReasons_L3 "Feature related reason for suppressing the Alert SetC for Pedestrian/Cyclist";
+CM_ SG_ 2147483680 PD_alertPattern_L4 "Confirmation pattern";
+CM_ SG_ 2147483680 PD_AEB_suppressReasons_L4 "Feature related reason for suppressing the Alert SetD for Pedestrian/Cyclist";
+CM_ SG_ 2147483680 general_padding_resereved "padding for CRC byte alignment";
+CM_ SG_ 2147483680 CRC_General "Calculated on all message (cyclic redundancy check 16 bit)";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 50000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "BusType" "MOST";
+BA_ "GenSigStartValue" SG_ 2147483680 General_protocol_version 7;
+BA_ "GenSigStartValue" SG_ 2147483680 HLB_Running_Mode 3;
+BA_ "GenSigStartValue" SG_ 2147483680 Reason_for_HLB_Inactive 15;
+BA_ "GenSigStartValue" SG_ 2147483680 ACC_CIPV_FreeSpace 2;
+BA_ "GenSigStartValue" SG_ 2147483680 Gen_Protocol_Delay 511;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_autofixOutOfCalibHorizon 1;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_autofixOutOfCalibYAW 1;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_partialBlockage 0;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_fullBlockage 0;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_out_of_focus 0;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_outOfCalibOffsetHorizon 0;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_outOfCalibOffsetYaw 0;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_TSR_outOfCalib_mode 1;
+BA_ "GenSigStartValue" SG_ 2147483680 FS_forzenWindshield_bool 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager0 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager1 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager2 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager3 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager4 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager5 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager6 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager7 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager8 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager9 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager10 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager11 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager12 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager13 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager14 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager15 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager16 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager17 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager18 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager19 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager20 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager21 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager22 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager23 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager24 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager25 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager26 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager27 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager28 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager29 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager30 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager31 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager32 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager33 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager34 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager35 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager36 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager37 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager38 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager39 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager40 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager41 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager42 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager43 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager44 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager45 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager46 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager47 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager48 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager49 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager50 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager51 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager52 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager53 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager54 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager55 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager56 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager57 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager58 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager59 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager60 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager61 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager62 1;
+BA_ "GenSigStartValue" SG_ 2147483680 ASDM_safety_Diagnostic_Manager63 1;
+BA_ "GenSigStartValue" SG_ 2147483680 HW_FDI_Indication_Level 1;
+VAL_ 2147483680 HLB_Reason_Preceding 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Preceding_Grace 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Oncoming 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Oncoming_Grace 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Street_Light 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Street_Light_Grace 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Lit_Night 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Lit_Night_US 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Low_speed 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Bright_Scene 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Sharp_Curve 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_Reason_Load_Balance 1 "on" 0 "off" ;
+VAL_ 2147483680 HLB_decision 1 "High Beam on" 0 "High Beam off" ;
+VAL_ 2147483680 HLB_Running_Mode 3 "invalid" 2 "HLB_Full" 1 "HLB_Inactive" 0 "HLB_Day" ;
+VAL_ 2147483680 HLB_electricGridFrequency 2 "60" 1 "50" 0 "Unknown" ;
+VAL_ 2147483680 Reason_for_HLB_Inactive 15 "invalid reason" 3 "deactivated" 2 "in grace" 1 "low detection rate" 0 "obviously bright" ;
+VAL_ 2147483680 ACC_LeftCloseRangeCutIn 1 "left cut in" 0 "no left cut in" ;
+VAL_ 2147483680 ACC_RightCloseRangeCutIn 1 "right cut in " 0 "no right cut in" ;
+VAL_ 2147483680 ACC_CIPV_FreeSpace 2 "No statement possible" 1 "No penetration detected" 0 "Penetration detected" ;
+VAL_ 2147483680 ACC_L_CCI_hasCut 1 "true" 0 "false" ;
+VAL_ 2147483680 ACC_L_CCI_hasCutLaneMark 1 "true" 0 "false" ;
+VAL_ 2147483680 ACC_R_CCI_hasCut 1 "true" 0 "false" ;
+VAL_ 2147483680 ACC_R_CCI_hasCutLaneMark 1 "true" 0 "false" ;
+VAL_ 2147483680 Gen_autofixEvent 3 "0x3 - event 3 (%3)" 2 "0x2 - event 2 (%3)" 1 "0x1 - event 1 (%3)" 0 "0x0 - no event" ;
+VAL_ 2147483680 Gen_currentCalibrationIsOK_yaw 1 "Yaw is trustable" 0 "Yaw is not trustable" ;
+VAL_ 2147483680 Gen_dayNightDusk 2 "0x2 - Dusk" 1 "0x1 - Night" 0 "0x0 - Day" ;
+VAL_ 2147483680 Gen_drivingSide 1 "0x1 - Right" 0 "0x0 - Left" ;
+VAL_ 2147483680 Gen_drivingSideEvt 1 "event in the last 10 frames" 0 "0x0 - no event in lat 10 frames" ;
+VAL_ 2147483680 Gen_Exposure_Type 1 "0x1 – Color" 0 "0x0 – Texture" ;
+VAL_ 2147483680 Gen_regionCode 10 "UK_RC" 9 "AUSTRALIA_RC" 8 "KOREA_RC" 7 "SOUTH_AFRICA_RC" 6 "CHINA_RC" 5 "JAPAN_RC" 4 "CANADA_RC" 3 "USA_RC" 2 "GULFREGION_RC" 1 "EUROPE_RC" 0 "INVALID_RC" ;
+VAL_ 2147483680 Gen_regionCodeEvent 1 "Region code is new in this frame" 0 "No change from previous frame" ;
+VAL_ 2147483680 FS_autofixOutOfCalibHorizon 1 "true" 0 "false" ;
+VAL_ 2147483680 FS_autofixOutOfCalibYAW 1 "true" 0 "false" ;
+VAL_ 2147483680 FS_blurredImage 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" ;
+VAL_ 2147483680 FS_partialBlockage 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" -1 "unknown" ;
+VAL_ 2147483680 FS_fullBlockage 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" -1 "unknown" ;
+VAL_ 2147483680 FS_splashes 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" ;
+VAL_ 2147483680 FS_selfGlare 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" ;
+VAL_ 2147483680 FS_sunRay 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" ;
+VAL_ 2147483680 FS_lowSun 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" ;
+VAL_ 2147483680 FS_out_of_focus 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" -1 "unknown" ;
+VAL_ 2147483680 FS_TSR_outOfCalib_mode 3 "TSR_CALIBRATION_OFFSET" 2 "TSR_CALIBRATION_OFFSET_AEB" 1 "TSR_CALIBRATION_UNKNOWN" 0 "TSR_CALIBRATION_OK" ;
+VAL_ 2147483680 FS_forzenWindshield_bool 1 "true" 0 "false" ;
+VAL_ 2147483680 FS_frozenWindshield 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" ;
+VAL_ 2147483680 FS_fog 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" ;
+VAL_ 2147483680 FS_rain 3 "high (99)" 2 "medium (75)" 1 "low (25)" 0 "none" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager4 1 "YAW_HORIZON_DEVIATION" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager6 1 "FCV_FCW_TTC" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager7 1 "POS_DIFF_KALMAN_VAL" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager8 1 "POS_DIFF_KALMAN_TRI" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager9 1 "ROI_DIFF_VC_FCV" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager11 1 "INPUT_CRC_MISMATCH" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager12 1 "OUTPUT_CRC_MISMATCH" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager13 1 "OLD_EGODATA_LAT" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager18 1 "IMAGER_DATA_ROWS_COLS " 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager19 1 "IMAGE_GRAB_MISS" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager22 1 "TEMPERATURE_OUT_OF_RANGE" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager25 1 "CO_FOF_DIFF" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager26 1 "CODE_CRC" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager27 1 "FCV_SIG_FFI" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager28 1 "Safe state indicator " 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager29 1 "RFC_ERR" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager30 1 "DT_ERR" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager31 1 "AEB_PARAM_FFI" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager32 1 "NO_MSG_ARRIVED_ERR" 0 "OK" ;
+VAL_ 2147483680 ASDM_safety_Diagnostic_Manager33 1 "CORRUPTED_VEHICLE_INF" 0 "OK" ;
+VAL_ 2147483680 VD_RTA 1 "RTA" 0 "NRTA" ;
+VAL_ 2147483680 VD_alertPattern_setA 43605 "Alert" 39270 "No Alert " ;
+VAL_ 2147483680 VD_alertPattern_setB 43605 "Alert" 39270 "No Alert " ;
+VAL_ 2147483680 VD_alertPattern_setC 43605 "Alert" 39270 "No Alert " ;
+VAL_ 2147483680 VD_alertPattern_setD 43605 "Alert" 39270 "No Alert " ;
+VAL_ 2147483680 VD_alertPattern_setE 43605 "Alert" 39270 "No Alert " ;
+VAL_ 2147483680 VD_alertPattern_setF 43605 "Alert" 39270 "No Alert " ;
+VAL_ 2147483680 PD_alertPattern_L1 43605 "Alert" 39270 "No_alert" ;
+VAL_ 2147483680 PD_alertPattern_L2 43605 "Alert" 39270 "No_alert" ;
+VAL_ 2147483680 PD_alertPattern_L3 43605 "Alert" 39270 "No_alert" ;
+VAL_ 2147483680 PD_alertPattern_L4 43605 "Alert" 39270 "No_alert" ;
+VAL_ 2147483680 HW_FDI_Indication_Level 8 "FDI_DistLow_TimeLow" 7 "FDI_DistLow_TimeOk" 6 "FDI_DistOk_TimeLow" 5 "FDI_DistHigh_TimeHigh" 4 "FDI_DistHigh_TimeOk" 3 "FDI_DistOk_TimeHigh" 2 "FDI_DistOk_TimeOk" 1 "FDI_Error" 0 "FDI_Outside_Speed_Range" ;
+VAL_ 2147483680 HW_Alert 1 "0x1 - Alet" 0 "0x0 - no alert" ;
+VAL_ 2147483680 PD_Alert_Type 2 "0x2 - Cyclist" 1 "0x1 - Ped" 0 "0x0 - None" ;
+

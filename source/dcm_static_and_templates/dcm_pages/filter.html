@@ -1,0 +1,73 @@
+<script>
+    let jsData = null;
+    $(function () {
+        jsData = djangoObjectToJavaScriptObj("{{l |safe}}");
+    });
+
+    function getFilterParams() {
+        filterByKeyValPair = {};
+        if ($("#datacoRadioBtn").is(':checked')) {
+
+            filterByKeyValPair['datacos'] = $("#datacoSelect").val();
+        }
+        $(".filterKey").children("option:selected").each(function (i) {
+                const key = $(this).val();
+                if (key != 'None') {
+                    const value = $(this).parent().siblings(".filterValue").children("option:selected").text()
+                    if (filterByKeyValPair.hasOwnProperty(key)) {
+                        const oldVal = filterByKeyValPair[key];
+                        delete filterByKeyValPair[key];
+                        filterByKeyValPair[`${key}__in`] = [oldVal, value];
+                    } else if (filterByKeyValPair.hasOwnProperty(`${key}__in`)) {
+                        filterByKeyValPair[`${key}__in`].push(value)
+                    } else {
+                        filterByKeyValPair[key] = value
+                    }
+                }
+            }
+        );
+        console.log(filterByKeyValPair);
+        return filterByKeyValPair
+    }
+
+    function getParamsAndFilter() {
+        console.log('Not filtering...')
+    }
+
+    $(document).on('change', '.filterKey', function () {
+        const dbName = $(this).val();
+        let filterVal = '<select class="form-control col-3 custom-select filterValue" id="filterValue">' +
+            '<option selected>None</option>';
+        $.each(jsData[dbName].values, function (i, val) {
+            filterVal += '<option>' + val + '</option>'
+        });
+        filterVal += '</select>';
+        $(this).siblings('.filterValue').remove();
+        $(this).after(filterVal);
+        if (dbName === "datacos") $(".filterValue").change();  // for filter by null
+    });
+
+    $(document).on('click', "#addFilter", function () {
+        let addElement = '<div class="form-group">' +
+            '<label class="col-2" for="filterKey"></label>' +
+            '<select class="form-control col-3 custom-select filterKey" id="filterKey"> ' +
+            '<option selected>None</option>' +
+            '{% for db_name, item in l.items %}' +
+            '<option value="{{db_name}}">{{item.user_name}}</option>' +
+            '{% endfor %}' +
+            '</select>' +
+            '<button class="btn btn-outline-danger removeFilter">Remove filter </button>' +
+            '</div>';
+        $("#filterForm").append(addElement);
+    });
+
+    $(document).on('click', '.removeFilter', function () {
+        $(this).closest("div.form-group").remove();
+        getParamsAndFilter()
+    });
+
+    $(document).on("change", ".filterValue", function () {
+        getParamsAndFilter()
+    });
+
+</script>

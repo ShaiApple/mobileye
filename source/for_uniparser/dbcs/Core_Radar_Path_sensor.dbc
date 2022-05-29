@@ -1,0 +1,163 @@
+VERSION "2"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MCU EyeQ4
+
+
+
+BO_ 168 Core_Radar_Path_sensor: 52 MCU
+ SG_ RADIN_PATH_Zero_Byte : 0|8@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_Protocol_Version : 8|8@1+ (1,0) [2|2] "NA" EyeQ4
+ SG_ RADIN_PATH_Sync_Frame_Index : 16|8@1+ (1,0) [0|255] "counter" EyeQ4
+ SG_ Reserved_1 : 24|8@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_Data_CRC : 32|32@1+ (1,0) [0|4294967295] "NA" EyeQ4
+ SG_ RADIN_PATH_Status_V : 64|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ RADIN_PATH_Status : 65|2@1+ (1,0) [0|2] "ENUM" EyeQ4
+ SG_ RADIN_PATH_Status_Error_V : 67|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ RADIN_PATH_Status_Error : 68|4@1+ (1,0) [0|9] "ENUM" EyeQ4
+ SG_ RADIN_PATH_R_V : 72|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ RADIN_PATH_R_Conf : 73|3@1+ (1,0) [0|4] "ENUM" EyeQ4
+ SG_ RADIN_PATH_L_V : 76|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ RADIN_PATH_L_Conf : 77|3@1+ (1,0) [0|4] "ENUM" EyeQ4
+ SG_ RADIN_PATH_R_Max_Range_V : 80|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ RADIN_PATH_R_Max_Range : 81|8@1+ (1,0) [0|255] "m" EyeQ4
+ SG_ RADIN_PATH_L_Max_Range_V : 89|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_2 : 90|6@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_L_Max_Range : 96|8@1+ (1,0) [0|255] "m" EyeQ4
+ SG_ RADIN_PATH_R_2nd_Curv_Grad_V : 104|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ RADIN_PATH_R_2nd_Curv_Grad : 105|20@1+ (0.0000001,-0.05) [-0.05|0.05] "INV(m2)" EyeQ4
+ SG_ RADIN_PATH_L_2nd_Curv_Grad_V : 125|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_3 : 126|2@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_L_2nd_Curv_Grad : 128|20@1+ (0.0000001,-0.05) [-0.05|0.05] "INV(m2)" EyeQ4
+ SG_ RADIN_PATH_R_Trans_Point_V : 148|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ RADIN_PATH_R_Trans_Point : 149|8@1+ (1,0) [0|255] "m" EyeQ4
+ SG_ RADIN_PATH_L_Trans_Point_V : 157|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_4 : 158|2@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_L_Trans_Point : 160|8@1+ (1,0) [0|255] "m" EyeQ4
+ SG_ RADIN_PATH_R_Curv_Grad_V : 168|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_5 : 169|23@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_R_Curv_Grad : 192|24@1+ (0.0000001,-0.05) [-0.05|0.05] "INV(m2)" EyeQ4
+ SG_ RADIN_PATH_L_Curv_Grad_V : 216|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_6 : 217|7@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_L_Curv_Grad : 224|24@1+ (0.0000001,-0.05) [-0.05|0.05] "INV(m2)" EyeQ4
+ SG_ RADIN_PATH_R_Init_Curv_V : 248|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_7 : 249|7@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_R_Init_Curv : 256|17@1+ (0.000001,-0.05) [-0.05|0.05] "INV(m)" EyeQ4
+ SG_ RADIN_PATH_L_Init_Curv_V : 273|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_8 : 274|14@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_L_Init_Curv : 288|17@1+ (0.000001,-0.05) [-0.05|0.05] "INV(m)" EyeQ4
+ SG_ RADIN_PATH_R_Heading_Angle_V : 305|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_9 : 306|14@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_R_Heading_Angle : 320|21@1+ (0.000001,-0.57) [-0.57|0.57] "rad" EyeQ4
+ SG_ RADIN_PATH_L_Heading_Angle_V : 341|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_10 : 342|10@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_L_Heading_Angle : 352|21@1+ (0.000001,-0.57) [-0.57|0.57] "rad" EyeQ4
+ SG_ RADIN_PATH_R_Offset_V : 373|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ Reserved_11 : 374|10@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ RADIN_PATH_R_Offset : 384|13@1+ (0.01,-25) [-25|25] "m" EyeQ4
+ SG_ RADIN_PATH_L_Offset_V : 397|1@1+ (1,0) [0|1] "bool " EyeQ4
+ SG_ RADIN_PATH_L_Offset : 398|13@1+ (0.01,-25) [-25|25] "m" EyeQ4
+ SG_ Reserved_12 : 411|5@1+ (1,0) [0|0] "NA" EyeQ4
+
+
+CM_ SG_ 168 RADIN_PATH_Protocol_Version "Version of the core protocol";
+CM_ SG_ 168 RADIN_PATH_Sync_Frame_Index "Synchronizes between messages in same frame";
+CM_ SG_ 168 RADIN_PATH_Data_CRC "CRC on the message";
+CM_ SG_ 168 RADIN_PATH_Status_V "IRAD_PATH_Status information is Valid";
+CM_ SG_ 168 RADIN_PATH_Status "Data status";
+CM_ SG_ 168 RADIN_PATH_Status_Error_V "IRAD_PATH_Left_Offset information is Valid";
+CM_ SG_ 168 RADIN_PATH_Status_Error "Data Status Error reason";
+CM_ SG_ 168 RADIN_PATH_R_V "IRAD_PATH_Right _Conf information is Valid";
+CM_ SG_ 168 RADIN_PATH_R_Conf "Confidence of the right side ";
+CM_ SG_ 168 RADIN_PATH_L_V "IRAD_PATH_Left _Conf information is Valid";
+CM_ SG_ 168 RADIN_PATH_L_Conf "Confidence of the left side ";
+CM_ SG_ 168 RADIN_PATH_R_Max_Range_V "IRAD_PATH_Right_Max_Range information is Valid";
+CM_ SG_ 168 RADIN_PATH_R_Max_Range "Range of the right side";
+CM_ SG_ 168 RADIN_PATH_L_Max_Range_V "IRAD_PATH_Left_Max_Range information is Valid";
+CM_ SG_ 168 RADIN_PATH_L_Max_Range "Range of the left side";
+CM_ SG_ 168 RADIN_PATH_R_2nd_Curv_Grad_V "IRAD_PATH_Right_2nd_Curv_Grad information is Valid";
+CM_ SG_ 168 RADIN_PATH_R_2nd_Curv_Grad "Second curvature gradient right side";
+CM_ SG_ 168 RADIN_PATH_L_2nd_Curv_Grad_V "IRAD_PATH_Left_2nd_Curv_Grad information is Valid";
+CM_ SG_ 168 RADIN_PATH_L_2nd_Curv_Grad "Second curvature gradient left side";
+CM_ SG_ 168 RADIN_PATH_R_Trans_Point_V "IRAD_PATH_Right_Trans_Point information is Valid";
+CM_ SG_ 168 RADIN_PATH_R_Trans_Point "Transition point right side";
+CM_ SG_ 168 RADIN_PATH_L_Trans_Point_V "IRAD_PATH_Left_Trans_Point information is Valid";
+CM_ SG_ 168 RADIN_PATH_L_Trans_Point "Transition point left side";
+CM_ SG_ 168 RADIN_PATH_R_Curv_Grad_V "IRAD_PATH_RIGHT_Curv_Grad information is Valid";
+CM_ SG_ 168 RADIN_PATH_R_Curv_Grad "Curvature cradient right side";
+CM_ SG_ 168 RADIN_PATH_L_Curv_Grad_V "IRAD_PATH_Left_Curv_Grad information is Valid";
+CM_ SG_ 168 RADIN_PATH_L_Curv_Grad "Curvature cradient left side";
+CM_ SG_ 168 RADIN_PATH_R_Init_Curv_V "IRAD_PATH_Right_Init_Curv information is Valid";
+CM_ SG_ 168 RADIN_PATH_R_Init_Curv "Initial curvature right side";
+CM_ SG_ 168 RADIN_PATH_L_Init_Curv_V "IRAD_PATH_Left_Init_Curv information is Valid";
+CM_ SG_ 168 RADIN_PATH_L_Init_Curv "Initial curvature left side";
+CM_ SG_ 168 RADIN_PATH_R_Heading_Angle_V "IRAD_PATH_Right_Heading_Angle information is Valid";
+CM_ SG_ 168 RADIN_PATH_R_Heading_Angle "Heading angle right side";
+CM_ SG_ 168 RADIN_PATH_L_Heading_Angle_V "IRAD_PATH_Left_Heading_Angle information is Valid";
+CM_ SG_ 168 RADIN_PATH_L_Heading_Angle "Heading angle left side";
+CM_ SG_ 168 RADIN_PATH_R_Offset_V "IRAD_PATH_Right_Offset information is Valid";
+CM_ SG_ 168 RADIN_PATH_R_Offset "Offset right side";
+CM_ SG_ 168 RADIN_PATH_L_Offset_V "IRAD_PATH_Left_Offset information is Valid";
+CM_ SG_ 168 RADIN_PATH_L_Offset "Offset left side";
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "BusType" "Ethernet";
+
+BA_ "GenSigStartValue" SG_ 168 RADIN_PATH_Protocol_Version 2;
+
+
+VAL_ 168 RADIN_PATH_Status 2 "NOT_AVAILABLE" 1 "REDUCED" 0 "AVAILABLE" ;
+VAL_ 168 RADIN_PATH_Status_Error 9 "SELF_TEST" 8 "EXTERNAL_FAULT" 7 "INTERNAL" 6 "NOT_AVAILABLE" 5 "BAD_ENV_CONDITIONS" 4 "MISSALIGNED" 3 "BLOCKED" 2 "CHECK_CALIB" 1 "POWER_UP_DOWN" 0 "OK" ;
+VAL_ 168 RADIN_PATH_R_Conf 4 "HIGHEST" 3 "HIGH" 2 "MID" 1 "LOW" 0 "VERY_LOW" ;
+VAL_ 168 RADIN_PATH_L_Conf 4 "HIGHEST" 3 "HIGH" 2 "MID" 1 "LOW" 0 "VERY_LOW" ;
+
+
+
+

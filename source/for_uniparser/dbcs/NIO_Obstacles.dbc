@@ -1,0 +1,536 @@
+VERSION "4"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: EyeQ4 ADC
+
+
+BO_ 2147483665 NIO_Obstacles_0x11: 260 EyeQ4
+ SG_ Obs_reserved_msg_header : 0|8@1+ (1,0) [0|0] "NA" ADC
+ SG_ Obs_sync_index : 8|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs_ProtocolVersion : 16|8@1+ (1,0) [4|4] "NA" ADC
+ SG_ Obs_NumObstacles : 24|8@1+ (1,0) [0|10] "NA" ADC
+ SG_ Obs_Go : 32|4@1+ (1,0) [0|15] "Enum" ADC
+ SG_ Obs_Close_Car : 36|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs_ID_MCP : 37|7@1+ (1,0) [0|63] "counter" ADC
+ SG_ Obs_ID_CIPV : 44|7@1+ (1,0) [0|63] "counter" ADC
+ SG_ Obs_lost_CIPV : 51|2@1+ (1,0) [0|3] "enum" ADC
+ SG_ Obs_CIPVFusionState : 53|2@1+ (1,0) [0|3] "enum" ADC
+ SG_ Obs1_ObstacleID : 55|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs1_ObstaclePosX : 63|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs1_ObstaclePosY : 75|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs1_Object_Bottom : 85|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs1_Object_Top : 93|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs1_Object_Left : 101|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs1_Object_Right : 110|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs1_BlinkerInfo : 119|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs1_Move_in_and_Out : 122|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs1_ObstacleVelX : 125|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs1_ObstacleType : 137|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs1_ObstacleStatus : 140|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs1_ObstacleBrakeLights : 143|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs1_ObstacleValid : 144|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs1_ObstacleLength : 146|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs1_ObstacleWidth : 154|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs1_ObstacleAge : 162|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs1_ObstacleLane : 170|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs1_RadarPosX : 172|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs1_RadarVelX : 184|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs1_RadarMatchConfidence : 196|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs1_MatchedRadarID : 199|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs1_ObstacleAngleRate : 206|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs1_ObstacleVelY : 222|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs1_Object_Accel_X : 230|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs1_ObstacleReplaced : 240|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs1_ObstacleAngle : 241|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs2_ObstacleID : 257|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs2_ObstaclePosX : 265|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs2_ObstaclePosY : 277|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs2_Object_Bottom : 287|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs2_Object_Top : 295|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs2_Object_Left : 303|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs2_Object_Right : 312|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs2_BlinkerInfo : 321|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs2_Move_in_and_Out : 324|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs2_ObstacleVelX : 327|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs2_ObstacleType : 339|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs2_ObstacleStatus : 342|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs2_ObstacleBrakeLights : 345|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs2_ObstacleValid : 346|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs2_ObstacleLength : 348|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs2_ObstacleWidth : 356|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs2_ObstacleAge : 364|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs2_ObstacleLane : 372|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs2_RadarPosX : 374|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs2_RadarVelX : 386|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs2_RadarMatchConfidence : 398|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs2_MatchedRadarID : 401|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs2_ObstacleAngleRate : 408|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs2_ObstacleVelY : 424|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs2_Object_Accel_X : 432|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs2_ObstacleReplaced : 442|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs2_ObstacleAngle : 443|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs3_ObstacleID : 459|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs3_ObstaclePosX : 467|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs3_ObstaclePosY : 479|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs3_Object_Bottom : 489|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs3_Object_Top : 497|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs3_Object_Left : 505|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs3_Object_Right : 514|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs3_BlinkerInfo : 523|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs3_Move_in_and_Out : 526|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs3_ObstacleVelX : 529|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs3_ObstacleType : 541|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs3_ObstacleStatus : 544|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs3_ObstacleBrakeLights : 547|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs3_ObstacleValid : 548|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs3_ObstacleLength : 550|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs3_ObstacleWidth : 558|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs3_ObstacleAge : 566|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs3_ObstacleLane : 574|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs3_RadarPosX : 576|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs3_RadarVelX : 588|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs3_RadarMatchConfidence : 600|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs3_MatchedRadarID : 603|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs3_ObstacleAngleRate : 610|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs3_ObstacleVelY : 626|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs3_Object_Accel_X : 634|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs3_ObstacleReplaced : 644|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs3_ObstacleAngle : 645|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs4_ObstacleID : 661|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs4_ObstaclePosX : 669|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs4_ObstaclePosY : 681|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs4_Object_Bottom : 691|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs4_Object_Top : 699|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs4_Object_Left : 707|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs4_Object_Right : 716|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs4_BlinkerInfo : 725|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs4_Move_in_and_Out : 728|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs4_ObstacleVelX : 731|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs4_ObstacleType : 743|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs4_ObstacleStatus : 746|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs4_ObstacleBrakeLights : 749|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs4_ObstacleValid : 750|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs4_ObstacleLength : 752|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs4_ObstacleWidth : 760|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs4_ObstacleAge : 768|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs4_ObstacleLane : 776|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs4_RadarPosX : 778|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs4_RadarVelX : 790|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs4_RadarMatchConfidence : 802|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs4_MatchedRadarID : 805|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs4_ObstacleAngleRate : 812|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs4_ObstacleVelY : 828|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs4_Object_Accel_X : 836|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs4_ObstacleReplaced : 846|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs4_ObstacleAngle : 847|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs5_ObstacleID : 863|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs5_ObstaclePosX : 871|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs5_ObstaclePosY : 883|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs5_Object_Bottom : 893|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs5_Object_Top : 901|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs5_Object_Left : 909|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs5_Object_Right : 918|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs5_BlinkerInfo : 927|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs5_Move_in_and_Out : 930|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs5_ObstacleVelX : 933|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs5_ObstacleType : 945|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs5_ObstacleStatus : 948|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs5_ObstacleBrakeLights : 951|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs5_ObstacleValid : 952|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs5_ObstacleLength : 954|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs5_ObstacleWidth : 962|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs5_ObstacleAge : 970|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs5_ObstacleLane : 978|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs5_RadarPosX : 980|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs5_RadarVelX : 992|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs5_RadarMatchConfidence : 1004|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs5_MatchedRadarID : 1007|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs5_ObstacleAngleRate : 1014|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs5_ObstacleVelY : 1030|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs5_Object_Accel_X : 1038|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs5_ObstacleReplaced : 1048|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs5_ObstacleAngle : 1049|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs6_ObstacleID : 1065|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs6_ObstaclePosX : 1073|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs6_ObstaclePosY : 1085|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs6_Object_Bottom : 1095|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs6_Object_Top : 1103|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs6_Object_Left : 1111|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs6_Object_Right : 1120|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs6_BlinkerInfo : 1129|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs6_Move_in_and_Out : 1132|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs6_ObstacleVelX : 1135|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs6_ObstacleType : 1147|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs6_ObstacleStatus : 1150|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs6_ObstacleBrakeLights : 1153|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs6_ObstacleValid : 1154|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs6_ObstacleLength : 1156|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs6_ObstacleWidth : 1164|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs6_ObstacleAge : 1172|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs6_ObstacleLane : 1180|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs6_RadarPosX : 1182|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs6_RadarVelX : 1194|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs6_RadarMatchConfidence : 1206|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs6_MatchedRadarID : 1209|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs6_ObstacleAngleRate : 1216|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs6_ObstacleVelY : 1232|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs6_Object_Accel_X : 1240|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs6_ObstacleReplaced : 1250|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs6_ObstacleAngle : 1251|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs7_ObstacleID : 1267|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs7_ObstaclePosX : 1275|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs7_ObstaclePosY : 1287|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs7_Object_Bottom : 1297|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs7_Object_Top : 1305|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs7_Object_Left : 1313|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs7_Object_Right : 1322|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs7_BlinkerInfo : 1331|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs7_Move_in_and_Out : 1334|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs7_ObstacleVelX : 1337|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs7_ObstacleType : 1349|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs7_ObstacleStatus : 1352|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs7_ObstacleBrakeLights : 1355|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs7_ObstacleValid : 1356|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs7_ObstacleLength : 1358|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs7_ObstacleWidth : 1366|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs7_ObstacleAge : 1374|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs7_ObstacleLane : 1382|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs7_RadarPosX : 1384|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs7_RadarVelX : 1396|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs7_RadarMatchConfidence : 1408|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs7_MatchedRadarID : 1411|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs7_ObstacleAngleRate : 1418|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs7_ObstacleVelY : 1434|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs7_Object_Accel_X : 1442|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs7_ObstacleReplaced : 1452|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs7_ObstacleAngle : 1453|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs8_ObstacleID : 1469|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs8_ObstaclePosX : 1477|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs8_ObstaclePosY : 1489|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs8_Object_Bottom : 1499|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs8_Object_Top : 1507|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs8_Object_Left : 1515|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs8_Object_Right : 1524|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs8_BlinkerInfo : 1533|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs8_Move_in_and_Out : 1536|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs8_ObstacleVelX : 1539|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs8_ObstacleType : 1551|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs8_ObstacleStatus : 1554|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs8_ObstacleBrakeLights : 1557|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs8_ObstacleValid : 1558|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs8_ObstacleLength : 1560|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs8_ObstacleWidth : 1568|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs8_ObstacleAge : 1576|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs8_ObstacleLane : 1584|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs8_RadarPosX : 1586|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs8_RadarVelX : 1598|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs8_RadarMatchConfidence : 1610|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs8_MatchedRadarID : 1613|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs8_ObstacleAngleRate : 1620|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs8_ObstacleVelY : 1636|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs8_Object_Accel_X : 1644|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs8_ObstacleReplaced : 1654|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs8_ObstacleAngle : 1655|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs9_ObstacleID : 1671|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs9_ObstaclePosX : 1679|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs9_ObstaclePosY : 1691|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs9_Object_Bottom : 1701|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs9_Object_Top : 1709|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs9_Object_Left : 1717|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs9_Object_Right : 1726|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs9_BlinkerInfo : 1735|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs9_Move_in_and_Out : 1738|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs9_ObstacleVelX : 1741|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs9_ObstacleType : 1753|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs9_ObstacleStatus : 1756|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs9_ObstacleBrakeLights : 1759|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs9_ObstacleValid : 1760|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs9_ObstacleLength : 1762|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs9_ObstacleWidth : 1770|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs9_ObstacleAge : 1778|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs9_ObstacleLane : 1786|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs9_RadarPosX : 1788|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs9_RadarVelX : 1800|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs9_RadarMatchConfidence : 1812|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs9_MatchedRadarID : 1815|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs9_ObstacleAngleRate : 1822|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs9_ObstacleVelY : 1838|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs9_Object_Accel_X : 1846|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs9_ObstacleReplaced : 1856|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs9_ObstacleAngle : 1857|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs10_ObstacleID : 1873|8@1+ (1,0) [0|63] "NA" ADC
+ SG_ Obs10_ObstaclePosX : 1881|12@1+ (0.0625,0) [0|250] "m" ADC
+ SG_ Obs10_ObstaclePosY : 1893|10@1- (0.0625,0) [-32|31.9375] "m" ADC
+ SG_ Obs10_Object_Bottom : 1903|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs10_Object_Top : 1911|8@1+ (1,0) [0|240] "pixels" ADC
+ SG_ Obs10_Object_Left : 1919|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs10_Object_Right : 1928|9@1+ (1,0) [0|320] "pixels" ADC
+ SG_ Obs10_BlinkerInfo : 1937|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs10_Move_in_and_Out : 1940|3@1+ (1,0) [0|4] "enum" ADC
+ SG_ Obs10_ObstacleVelX : 1943|12@1- (0.0625,0) [-127.93|127.93] "m/sec" ADC
+ SG_ Obs10_ObstacleType : 1955|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs10_ObstacleStatus : 1958|3@1+ (1,0) [0|7] "enum" ADC
+ SG_ Obs10_ObstacleBrakeLights : 1961|1@1+ (1,0) [0|1] "bool" ADC
+ SG_ Obs10_ObstacleValid : 1962|2@1+ (1,0) [0|2] "bool" ADC
+ SG_ Obs10_ObstacleLength : 1964|8@1+ (0.5,0) [0|31.5] "m" ADC
+ SG_ Obs10_ObstacleWidth : 1972|8@1+ (0.05,0) [0|12.5] "m" ADC
+ SG_ Obs10_ObstacleAge : 1980|8@1+ (1,0) [0|255] "NA" ADC
+ SG_ Obs10_ObstacleLane : 1988|2@1+ (1,0) [0|3] "Enum" ADC
+ SG_ Obs10_RadarPosX : 1990|12@1+ (0.0625,0) [0|255.93] "m" ADC
+ SG_ Obs10_RadarVelX : 2002|12@1- (0.0625,0) [-128|127.9375] "m/sec" ADC
+ SG_ Obs10_RadarMatchConfidence : 2014|3@1+ (1,0) [0|5] "enum" ADC
+ SG_ Obs10_MatchedRadarID : 2017|7@1+ (1,0) [0|127] "NA" ADC
+ SG_ Obs10_ObstacleAngleRate : 2024|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+ SG_ Obs10_ObstacleVelY : 2040|8@1- (0.1,0) [-12.8|12.7] "m/s" ADC
+ SG_ Obs10_Object_Accel_X : 2048|10@1- (0.03,0) [-14.97|14.97] "m/s" ADC
+ SG_ Obs10_ObstacleReplaced : 2058|1@1+ (1,0) [0|1] "Enum" ADC
+ SG_ Obs10_ObstacleAngle : 2059|16@1- (0.01,0) [-327.68|327.67] "degree" ADC
+
+
+
+
+
+CM_ SG_ 2147483665 Obs_reserved_msg_header "To avoid confusion with MESP messages";
+CM_ SG_ 2147483665 Obs_Go "Currently this signal is implemented (Stop or Go are reported) only when the own vehicle is standing (having ego speed of less than 0.1 meters per second). Otherwise, the value 15 is reported.";
+CM_ SG_ 2147483665 Obs_Close_Car "Indication whether we detect a close car in front of the host vehicle or not.";
+CM_ SG_ 2147483665 Obs_ID_MCP "Most Critical Pedestrian (Alerts are given only for the MCP)";
+CM_ SG_ 2147483665 Obs_ID_CIPV "Closest In Path Vehicle (Alerts are given only for the CIPV)";
+CM_ SG_ 2147483665 Obs_CIPVFusionState "Radar only- no vision object";
+CM_ SG_ 2147483665 Obs1_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs1_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs1_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs1_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs1_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs1_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second.";
+CM_ SG_ 2147483665 Obs1_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs1_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs1_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs2_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs2_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs2_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs2_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs2_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs2_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs2_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs2_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs2_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs3_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs3_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs3_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs3_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs3_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs3_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs3_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs3_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs3_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs4_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs4_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs4_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs4_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs4_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs4_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs4_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs4_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs4_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs5_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs5_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs5_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs5_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs5_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs5_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs5_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs5_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs5_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs6_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs6_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs6_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs6_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs6_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs6_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs6_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs6_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs6_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs7_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs7_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs7_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs7_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs7_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs7_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs7_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs7_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs7_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs8_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs8_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs8_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs8_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs8_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs8_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs8_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs8_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs8_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs9_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs9_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs9_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs9_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs9_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs9_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs9_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs9_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs9_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+CM_ SG_ 2147483665 Obs10_ObstacleID "New obstacles are given the last used free ID";
+CM_ SG_ 2147483665 Obs10_Object_Bottom "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs10_Object_Top "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs10_Object_Left "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs10_Object_Right "on Level 0 Image , relative to point 0,0 which is the bottom left of image";
+CM_ SG_ 2147483665 Obs10_Move_in_and_Out "The signal is based on our estimation of where the target is now relatively to the lanes, its rate of change, and our estimation of where it is going to be within one second. ";
+CM_ SG_ 2147483665 Obs10_ObstacleBrakeLights "0 = off or not identifined 1 = on";
+CM_ SG_ 2147483665 Obs10_ObstacleVelY "Relative lateral velocity of the object. ";
+CM_ SG_ 2147483665 Obs10_Object_Accel_X "The longitude acceleration of the object. Type: 10 bit, signed integer  Range: -14.97 : 14.97 [m/s2] Conversion: (HEX)* 0.03 Invalid value: 200h";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 50000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "BusType" "Ethernet";
+BA_ "GenMsgCycleTime" BO_ 2147483665 28;
+BA_ "GenSigStartValue" SG_ 2147483665 Obs_ProtocolVersion 4;
+BA_ "GenSigStartValue" SG_ 2147483665 Obs_Go 15;
+VAL_ 2147483665 Obs_Go 15 "Not Calculated" 14 "currently unused" 13 "currently unused" 12 "currently unused" 11 "currently unused" 10 "currently unused" 9 "currently unused" 8 "currently unused" 7 "currently unused" 6 "currently unused" 5 "currently unused" 4 "currently unused" 3 "Driver decision is required" 2 "Undecided" 1 "Go" 0 "Stop" ;
+VAL_ 2147483665 Obs_Close_Car 1 "Close car exists" 0 "No close car" ;
+VAL_ 2147483665 Obs_lost_CIPV 2 "lost in FOV" 1 "lost out of  FOV" 0 "no loss" ;
+VAL_ 2147483665 Obs_CIPVFusionState 3 " radar " 2 " fused" 1 " vision" 0 "not initialized " ;
+VAL_ 2147483665 Obs1_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs1_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs1_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs1_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs1_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs1_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs1_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs1_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs1_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs2_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs2_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs2_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs2_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs2_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs2_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs2_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs2_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs2_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs3_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs3_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs3_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs3_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs3_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs3_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs3_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs3_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs3_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs4_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs4_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs4_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs4_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs4_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs4_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs4_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs4_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs4_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs5_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs5_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs5_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs5_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs5_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs5_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs5_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs5_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs5_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs6_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs6_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs6_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs6_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs6_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs6_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs6_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs6_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs6_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs7_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs7_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs7_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs7_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs7_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs7_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs7_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs7_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs7_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs8_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs8_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs8_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs8_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs8_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs8_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs8_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs8_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs8_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs9_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs9_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs9_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs9_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs9_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs9_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs9_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs9_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs9_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+VAL_ 2147483665 Obs10_BlinkerInfo 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 2147483665 Obs10_Move_in_and_Out 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 2147483665 Obs10_ObstacleType 7 "carOrTruck" 5 "General Object" 4 "Bicycle" 3 "pedestrian" 2 "bike" 1 "truck" 0 "vehicle" ;
+VAL_ 2147483665 Obs10_ObstacleStatus 6 "Unused" 5 "Parked never moved, BckLightsOff" 4 "Oncoming" 3 "moving" 2 "stopped (movable)" 1 "standing neverMoved bckLightsOn" 0 "not defined" ;
+VAL_ 2147483665 Obs10_ObstacleBrakeLights 1 "object's brake lights are on" 0 "object's brake lights are off" ;
+VAL_ 2147483665 Obs10_ObstacleValid 2 "older valid" 1 "new valid (detected this frame)" ;
+VAL_ 2147483665 Obs10_ObstacleLane 3 "next next lane (left or right)" 2 "next lane (left or right)" 1 "ego lane" 0 "not assigned" ;
+VAL_ 2147483665 Obs10_RadarMatchConfidence 5 "high confidence match" 4 "radar match with bounded error 4" 3 "radar match with bounded error 3" 2 "radar match with bounded error 2" 1 "multi match." 0 "no match" ;
+VAL_ 2147483665 Obs10_ObstacleReplaced 1 "replaced in this frame" 0 "not replaced in this frame" ;
+

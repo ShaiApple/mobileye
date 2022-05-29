@@ -1,0 +1,10 @@
+{
+	"DE": ["Copy heaviest", "Copy named with"],
+	"REM": "Copy heaviest",
+	"GTD": null,
+	"FPA": ["Copy latest", "Copy heaviest"],
+	"Helpdesk": ["Copy latest", "Copy heaviest", "Copy named with"],
+	"AV": "Copy named with",
+	"DevOps": ["Copy heaviest", "Copy named with"],
+	"PSW": ["Copy latest", "Copy named with"]
+}

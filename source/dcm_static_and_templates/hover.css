@@ -1,0 +1,47 @@
+.tooltiplink {
+  position:relative; /* making the .tooltip span a container for the tooltip text */
+}
+
+.tooltiplink:before {
+  content: attr(data-text);
+  position: absolute;
+  
+  top: 160%;		/* distance of textbox from the hovered text */
+  left: 50%;		/* setting the textbox position to center of screen */
+  transform: translateX(-50%);		/* aligning the textbox to beneath the middle of hovered text */
+  
+  /* basic styles */
+  white-space: nowrap;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  background: #323254;
+  color: #dadae0;
+  text-align: center;
+  z-index: 9;     /* this property solved the issue of "penetrating" links to tooltip background */
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-in-out;
+}
+
+/* the arrow: */
+.tooltiplink:after {
+  content: "";
+  position:absolute;
+ 
+  top: 80%;		/* distance of arrow from the hovered text */
+  left: 50%;	/* setting the arrow position to center of screen */
+  transform: translateX(-50%);		/* aligning the arrow to point the middle of hovered text */
+  border:10px solid;
+  border-color: transparent transparent #323254 transparent;		/* order: right left top bottom */
+  z-index: 9;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-in-out;
+}
+
+.tooltiplink:hover:before, .tooltiplink:hover:after {
+  opacity: 1 !important ;
+  visibility: visible;
+}

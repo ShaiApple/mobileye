@@ -1,0 +1,190 @@
+VERSION "7"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MCU EyeQ4
+
+
+
+BO_ 161 Core_GPS_sensor: 56 MCU
+ SG_ GPS_Zero_byte : 0|8@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GPS_Protocol_Version : 8|8@1+ (1,0) [7|7] "counter" EyeQ4
+ SG_ GPS_Data_Status_V : 16|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Data_Status : 17|3@1+ (1,0) [0|6] "ENUM" EyeQ4
+ SG_ GPS_Num_Satellites_V : 20|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Num_Satellites : 21|5@1+ (1,0) [0|31] "counter" EyeQ4
+ SG_ GPS_HDOP_V : 26|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_1 : 27|5@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GPS_HDOP : 32|10@1+ (0.1,0) [0|100] "NA" EyeQ4
+ SG_ GPS_Clock_Synced_V : 42|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Clock_Synced : 43|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Reciever_Status_V : 44|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Reciever_Status : 45|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_EPOCH_Timestamp_V : 46|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_2 : 47|17@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GPS_EPOCH_Timestamp : 64|64@1+ (1,0) [0|5000000000000] "ms" EyeQ4
+ SG_ GPS_MCU_Timestamp_V : 128|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_4 : 129|31@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GPS_MCU_Timestamp : 160|64@1+ (1,0) [0|18446744073709551615] "microsecond" EyeQ4
+ SG_ GPS_Speed_Over_Ground_V : 224|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Speed_Over_Ground : 225|14@1+ (0.01,0) [0|100] "MPS" EyeQ4
+ SG_ GPS_Course_V : 239|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Course : 240|12@1+ (0.1,0) [0|360] "deg" EyeQ4
+ SG_ GPS_Latitude_V : 252|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_5 : 253|3@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GPS_Latitude : 256|31@1+ (0.0000001,0) [0|90] "deg" EyeQ4
+ SG_ GPS_Longitude_V : 287|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Longitude : 288|31@1+ (0.0000001,0) [0|180] "deg" EyeQ4
+ SG_ GPS_Altitude_V : 319|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Altitude : 320|20@1+ (0.01,-500) [-500|6000] "m" EyeQ4
+ SG_ GPS_Lat_Direc_V : 340|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Lat_Direction : 341|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Long_Direc_V : 342|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Long_Direction : 343|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Lat_Pos_Bias_V : 344|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_6 : 345|7@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GPS_Lat_Position_Bias : 352|14@1+ (0.01,-50) [-50|50] "m" EyeQ4
+ SG_ GPS_Long_Pos_Bias_V : 366|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Long_Position_Bias : 367|14@1+ (0.01,0) [0|100] "m" EyeQ4
+ SG_ GPS_Lat_Pos_STD_V : 381|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_7 : 382|2@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GPS_Lat_Position_STD : 384|14@1+ (0.01,-50) [-50|50] "m" EyeQ4
+ SG_ GPS_Long_Pos_STD_V : 398|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_Long_Position_STD : 399|14@1+ (0.01,0) [0|100] "m" EyeQ4
+ SG_ GPS_Alt_Pos_STD_V : 413|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ Reserved_8 : 414|2@1+ (1,0) [0|0] "NA" EyeQ4
+ SG_ GPS_Alt_Position_STD : 416|14@1+ (0.01,0) [0|100] "m" EyeQ4
+ SG_ GPS_dAlt_Geo_vs_Ellips_V : 430|1@1+ (1,0) [0|1] "bool" EyeQ4
+ SG_ GPS_dAlt_Geo_vs_Ellips : 431|15@1+ (0.01,-150) [-150|150] "m" EyeQ4
+ SG_ Reserved_9 : 446|2@1+ (1,0) [0|0] "NA" EyeQ4
+
+
+CM_ SG_ 161 GPS_Data_Status_V "signal validator";
+CM_ SG_ 161 GPS_Data_Status "Type of GPS-Fix of current location based on several GPS systems.";
+CM_ SG_ 161 GPS_Num_Satellites_V "signal validator";
+CM_ SG_ 161 GPS_Num_Satellites "Number of utilized satellites from the GGA message, currently ranges between 0 and 12.";
+CM_ SG_ 161 GPS_HDOP_V "signal validator";
+CM_ SG_ 161 GPS_HDOP "GPS horizontal dilution of precision from the GSA message";
+CM_ SG_ 161 GPS_Clock_Synced_V "signal validator";
+CM_ SG_ 161 GPS_Clock_Synced "True if OnePPS is on";
+CM_ SG_ 161 GPS_Reciever_Status_V "signal validator";
+CM_ SG_ 161 GPS_Reciever_Status "This signal indicates the status of the GPS receiver. From message GPRMC status, NMEA protocol 0183";
+CM_ SG_ 161 GPS_EPOCH_Timestamp_V "signal validator";
+CM_ SG_ 161 GPS_EPOCH_Timestamp "count from 00:00:00, 01.01.1970 ";
+CM_ SG_ 161 GPS_MCU_Timestamp_V "signal validator";
+CM_ SG_ 161 GPS_Speed_Over_Ground_V "signal validator";
+CM_ SG_ 161 GPS_Speed_Over_Ground "This signal indicates the size of the speed regardless of direction. Example: 12 [MPS]. Resolution should be 0.01 [MPS]";
+CM_ SG_ 161 GPS_Course_V "signal validator";
+CM_ SG_ 161 GPS_Course "GPS course angle from the VTG message (i.e. 0 = north and course increases anti-clockwise i.e. 90 = east, 180 = south and 270 = west).";
+CM_ SG_ 161 GPS_Latitude_V "signal validator";
+CM_ SG_ 161 GPS_Latitude "Latitude of current GNSS measurement";
+CM_ SG_ 161 GPS_Longitude_V "signal validator";
+CM_ SG_ 161 GPS_Longitude "Latitude of current GNSS measurement";
+CM_ SG_ 161 GPS_Altitude_V "signal validator";
+CM_ SG_ 161 GPS_Altitude "GPS altitude from the GGA message.  +ve is above mean sea level.";
+CM_ SG_ 161 GPS_Lat_Direc_V "signal validator";
+CM_ SG_ 161 GPS_Lat_Direction "Latitude direction of current GNSS measurement ";
+CM_ SG_ 161 GPS_Long_Direc_V "signal validator";
+CM_ SG_ 161 GPS_Long_Direction "Longitude direction of current GNSS measurement ";
+CM_ SG_ 161 GPS_Lat_Pos_Bias_V "signal validator";
+CM_ SG_ 161 GPS_Lat_Position_Bias "Expected error in latitude due to bias, with noise = 0 from the GBS message";
+CM_ SG_ 161 GPS_Long_Pos_Bias_V "signal validator";
+CM_ SG_ 161 GPS_Long_Position_Bias "Expected error in latitude due to bias, with noise = 0 from the GBS message";
+CM_ SG_ 161 GPS_Lat_Pos_STD_V "signal validator";
+CM_ SG_ 161 GPS_Lat_Position_STD "Estimated standard deviation of position in latitude direction. From message GPGST, field 6, NMEA protocol 0183. Values greater than the maximum of the value range are to be limited to the maximum.";
+CM_ SG_ 161 GPS_Long_Pos_STD_V "signal validator";
+CM_ SG_ 161 GPS_Long_Position_STD "Estimated standard deviation of position in longitude direction. From message GPGST, field 6, NMEA protocol 0183. Values greater than the maximum of the value range are to be limited to the maximum.";
+CM_ SG_ 161 GPS_Alt_Pos_STD_V "signal validator";
+CM_ SG_ 161 GPS_Alt_Position_STD "Estimated standard deviation of position in Altitude direction. From message GPGST, field 6, NMEA protocol 0183. Values greater than the maximum of the value range are to be limited to the maximum.";
+CM_ SG_ 161 GPS_dAlt_Geo_vs_Ellips_V "signal validator";
+CM_ SG_ 161 GPS_dAlt_Geo_vs_Ellips "Diff between sealevel measured Alt to ellipsoid GPS Alt at given long and lat.";
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "BusType" "Ethernet";
+
+BA_ "GenSigStartValue" SG_ 161 GPS_Protocol_Version 7;
+BA_ "GenSigStartValue" SG_ 161 GPS_MCU_Timestamp 2;
+BA_ "GenSigStartValue" SG_ 161 GPS_Lat_Direction 1;
+BA_ "GenSigStartValue" SG_ 161 GPS_Long_Direction 1;
+BA_ "GenSigStartValue" SG_ 161 GPS_Lat_Position_Bias 10000;
+BA_ "GenSigStartValue" SG_ 161 GPS_Lat_Position_STD 10000;
+BA_ "GenSigStartValue" SG_ 161 GPS_Long_Position_STD 10000;
+BA_ "GenSigStartValue" SG_ 161 GPS_Alt_Position_STD 10000;
+BA_ "GenSigStartValue" SG_ 161 GPS_dAlt_Geo_vs_Ellips 30000;
+
+
+VAL_ 161 GPS_Data_Status_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Data_Status 6 "TIME_FIX" 5 "3D_DR" 4 "DR" 3 "3D" 2 "2D" 1 "NO_FIX" 0 "INIT_FIX" ;
+VAL_ 161 GPS_Num_Satellites_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_HDOP_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Clock_Synced_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Clock_Synced 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Reciever_Status_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Reciever_Status 1 "OPTIMAL" 0 "NOT_SUFFICIANT" ;
+VAL_ 161 GPS_EPOCH_Timestamp_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_MCU_Timestamp_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Speed_Over_Ground_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Course_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Latitude_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Longitude_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Altitude_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Lat_Direc_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Lat_Direction 1 "SOUTH" 0 "NORTH" ;
+VAL_ 161 GPS_Long_Direc_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Long_Direction 1 "WEST" 0 "EAST" ;
+VAL_ 161 GPS_Lat_Pos_Bias_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Long_Pos_Bias_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Lat_Pos_STD_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Long_Pos_STD_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_Alt_Pos_STD_V 1 "TRUE" 0 "FALSE" ;
+VAL_ 161 GPS_dAlt_Geo_vs_Ellips_V 1 "TRUE" 0 "FALSE" ;
+
+
+
+
