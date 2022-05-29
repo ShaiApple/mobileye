@@ -1,4 +1,5 @@
-from mobileye import urlopen, json,typing,shutil,glob,os,PERMISSIONS_FILE
+from mobileye import urlopen, json, typing, shutil, glob, os, PERMISSIONS_FILE
+
 
 class TasksHolder:
     def __init__(self, url):
@@ -107,7 +108,7 @@ class TaskExecuter:
             TaskExecuter.copy_latest(source, destination, task_description)
         elif task_description.startswith("Copy heaviest"):
             TaskExecuter.copy_heaviest(source, destination, task_description)
-        elif task_description.startswith("Copy") and "file named with" in task_description.lower():
+        elif task_description.startswith("Copy") and "file named with" in task_description:
             TaskExecuter.copy_with(source, destination, task_description)
         else:
             raise Exception("Unknown case!!")
@@ -131,7 +132,8 @@ class TaskExecuter:
         if len(files) > 0:
             heaviest_file = files[0]
             heaviest_file_size = os.path.getsize(heaviest_file)
-            for cur_file in files[1:]:  # we assume there are no 2 files with the same size (in that case we will copy the first one)
+            for cur_file in files[1:]:
+                # we assume there are no 2 files with the same size (in that case we will copy the first one)
                 cur_size = os.path.getsize(cur_file)
                 if cur_size > heaviest_file_size:
                     heaviest_file = cur_file

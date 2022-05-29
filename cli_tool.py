@@ -63,7 +63,7 @@ def _run_tool():
             os.makedirs(tmp_path)
 
     TaskExecuter.execute_task(task_description, source, destination)
-
+    write_to_log(logger, f"{task_description} from {source[0]} to {destination} ")
 
 if __name__ == '__main__':
     _run_tool()
