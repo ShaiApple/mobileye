@@ -25,7 +25,7 @@ def _run_tool():
     logger = create_log_file(log_name)
     write_to_log(logger, f"Task Id: {task_id}, Username: {name}, Department: {dept}")
 
-    # -------- 2: get api data --------
+    # -------- 2: get data from api  --------
     task_holder = TasksHolder(API)
     # -------- 3: check if task is exist --------
     # ask for 3 times if not exist
@@ -34,6 +34,8 @@ def _run_tool():
     if not is_exist:
         print_to_console(message)
         exit()
+    else:
+        print_to_console(message)
     # check if need to chenge id number
     if is_exist and message:
         task_id = int(message.split()[1])
@@ -44,26 +46,32 @@ def _run_tool():
     if not is_open:
         print_to_console(message)
         exit()
+    else:
+        print_to_console(message)
+
     # -------- 6: permissions --------
     task_description = task_holder.dict[task_id].get_task_description()
     has_permission, message = task_holder.check_permission(task_description, dept)
     write_to_log(logger, message)
     if not has_permission:
-        print_to_console("You don't have sufficient permissions")
+        print_to_console(message)
         exit()
+    else: print_to_console(message)
+
 
     # -------- DO THE TASK --------
-    source = task_holder.dict[task_id].source
-    destination = task_holder.dict[task_id].destination[0]
+    source = task_holder.dict[task_id].get_source()
+    destination = task_holder.dict[task_id].get_destination()
     # create destination:
     tmp_path = ""
     for dir in destination.split("/"):
         tmp_path = os.path.join(tmp_path, dir)
         if not os.path.isdir(tmp_path):
             os.makedirs(tmp_path)
+            write_to_log(logger, f"created {tmp_path}")
 
     TaskExecuter.execute_task(task_description, source, destination)
-    write_to_log(logger, f"{task_description} from {source[0]} to {destination} ")
+    write_to_log(logger, f"{task_description} from {source} to {destination} ")
 
 if __name__ == '__main__':
     _run_tool()

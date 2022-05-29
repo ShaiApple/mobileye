@@ -2,7 +2,7 @@ from mobileye import urlopen, json, typing, shutil, glob, os, PERMISSIONS_FILE
 
 
 class TasksHolder:
-    def __init__(self, url):
+    def __init__(self, url: str):
         self.dict = self.prepare_dict(url)
         # Get permissions data
         data = json.load(PERMISSIONS_FILE)
@@ -11,7 +11,7 @@ class TasksHolder:
     def prepare_dict(self, url) -> dict:
         """
         :param url: Given url to get data
-        :return: dict {int : task object}
+        :return: dict {int : Task object}
         """
         response = urlopen(url)
         jsonString = json.loads(response.read())
@@ -30,7 +30,7 @@ class TasksHolder:
         """
 
         if id in self.dict.keys():
-            msg = ""
+            msg = ""  # empty because I don't to print while true
             return True, msg
         else:
             while (attempt < 3):
@@ -54,7 +54,13 @@ class TasksHolder:
             msg = f"The task cannot be executed due to its status ({self.dict[id].get_status()}). exit."
             return False, msg
 
-    def check_permission(self, task_description: str, dept: str) -> bool:
+    def check_permission(self, task_description: str, dept: str) -> typing.Tuple[bool, str]:
+        """
+        check if permissions is null,str or list and sent to def inner_check_permission as str.
+        :param task_description: task_description
+        :param dept: dept
+        :return: bool + message
+        """
         true_msg = f"{dept} have permission"
         false_msg = f"{dept} have no permission. exit."
         permissions = self.permissions_data[dept.lower()]
@@ -73,20 +79,17 @@ class TasksHolder:
             else:
                 return False, false_msg
 
-    def inner_check_permission(self, task_description, permission) -> bool:
-
-        if task_description.lower().startswith(permission.lower()):
-            # Copy latest, Copy haviest
-            return True
-        elif permission.lower() == 'Copy named with'.lower():
-            # copy file with
+    def inner_check_permission(self, task_description: str, permission: str) -> bool:
+        # Note that permission and description will always begin with capital c
+        if task_description.startswith(permission) or permission == 'Copy named with':
             return True
         else:
             return False
 
 
 class Task:
-    def __init__(self, task_info):
+    def __init__(self, task_info: dict):
+        # I added [0] to extract a string from tuple.
         self.id = task_info["id"],
         self.created_time = task_info["created_at"],
         self.description = task_info["description"],
@@ -94,16 +97,22 @@ class Task:
         self.destination = task_info["destination"],
         self.status = task_info["status"]
 
-    def get_task_description(self):
+    def get_task_description(self) -> str:
         return self.description[0]
 
-    def get_status(self):
+    def get_status(self) -> str:
         return self.status
+
+    def get_source(self)->str:
+        return self.source[0]
+
+    def get_destination(self)->str:
+        return self.destination[0]
 
 
 class TaskExecuter:
     @staticmethod
-    def execute_task(task_description, source, destination):
+    def execute_task(task_description:str, source, destination):
         if task_description.startswith("Copy latest"):
             TaskExecuter.copy_latest(source, destination, task_description)
         elif task_description.startswith("Copy heaviest"):
@@ -117,7 +126,7 @@ class TaskExecuter:
     def copy_with(source, destination, description):
         extension = description.split(" ")[2]
         sub_file_name = description.lower().split("file named with ")[1]
-        file_path = os.path.join(source[0], f"*{sub_file_name}*.{extension}")
+        file_path = os.path.join(source, f"*{sub_file_name}*.{extension}")
         files = glob.glob(file_path)
         if len(files) == 1:
             shutil.copy(files[0], destination)
@@ -127,7 +136,7 @@ class TaskExecuter:
     @staticmethod
     def copy_heaviest(source, destination, description):
         extension = description.lower().split("copy heaviest ")[1].split(" ")[0]
-        file_path = os.path.join(source[0], f"*.{extension}")
+        file_path = os.path.join(source, f"*.{extension}")
         files = glob.glob(file_path)
         if len(files) > 0:
             heaviest_file = files[0]
@@ -146,7 +155,7 @@ class TaskExecuter:
     @staticmethod
     def copy_latest(source, destination, description):
         extension = description.split(" ")[2]
-        file_path = os.path.join(source[0], f"*.{extension}")
+        file_path = os.path.join(source, f"*.{extension}")
         files = glob.glob(file_path)
         if len(files) > 0:
             latest_file = files[0]
