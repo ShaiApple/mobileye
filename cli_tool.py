@@ -59,6 +59,8 @@ def _run_tool():
     if is_exist and message:
         task_id = int(message.split()[1])
 
+
+
     # -------- 5:check if task status is open--------
     is_open, message = task_holder.check_if_status_is_open(task_id)
     write_to_log(logger, message)
@@ -68,7 +70,7 @@ def _run_tool():
     else:
         print_to_console(message)
 
-    # -------- 6: permissions --------
+    # -------- 6: check permissions --------
     task_description = task_holder.dict[task_id].get_task_description()
     has_permission, message = task_holder.check_permission(task_description, dept)
     write_to_log(logger, message)
