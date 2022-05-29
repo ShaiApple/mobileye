@@ -4,7 +4,7 @@ python "cli_tool.py" --name Shai Bremer --dept DE --id 3582
 Helpdesk 7080
 """
 
-from mobileye import  TasksHolder, print_to_console, API, LOGS_PATH, write_to_log
+from mobileye import TasksHolder, print_to_console, API, LOGS_PATH, write_to_log
 from mobileye import TaskExecuter, datetime, logging, os, Logger, argparse
 
 
@@ -58,8 +58,6 @@ def _run_tool():
     # check if need to chenge id number
     if is_exist and message:
         task_id = int(message.split()[1])
-
-
 
     # -------- 5:check if task status is open--------
     is_open, message = task_holder.check_if_status_is_open(task_id)

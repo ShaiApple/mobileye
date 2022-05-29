@@ -89,13 +89,16 @@ class TasksHolder:
 
 class Task:
     def __init__(self, task_info: dict):
-        # I added [0] to extract a string from tuple.
         self.id = task_info["id"],
         self.created_time = task_info["created_at"],
         self.description = task_info["description"],
         self.source = task_info["source"],
         self.destination = task_info["destination"],
         self.status = task_info["status"]
+
+    # I added [0] to extract a string from tuple.
+    def get_id(self) -> int:
+        return self.id[0]
 
     def get_task_description(self) -> str:
         return self.description[0]
