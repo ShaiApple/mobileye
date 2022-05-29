@@ -4,8 +4,8 @@ python "cli_tool.py" --name Shai Bremer --dept DE --id 3582
 Helpdesk 7080
 """
 
-from mobileye import get_input, TasksHolder, print_to_console, API, LOGS_PATH, write_to_log
-from mobileye import TaskExecuter, datetime, logging, os, Logger
+from mobileye import  TasksHolder, print_to_console, API, LOGS_PATH, write_to_log
+from mobileye import TaskExecuter, datetime, logging, os, Logger, argparse
 
 
 def create_log_file(log_name: str) -> Logger:
@@ -13,6 +13,25 @@ def create_log_file(log_name: str) -> Logger:
     path = os.path.join(LOGS_PATH, log_name)
     logging.basicConfig(filename=path, level=logging.INFO)
     return logger
+
+
+def get_input() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    # --name NAME --dept DEPARTMENT --id TASK ID
+    parser.add_argument("--name", nargs='*')
+    parser.add_argument("--dept")
+    parser.add_argument("--id", type=int)
+    args = parser.parse_args()
+
+    # handle missing args
+    while (not args.name):
+        args.name = input('Please enter your name: ')
+    while (not args.dept):
+        args.dept = input('Please enter department: ')
+    while (not args.id):
+        args.id = input('Please enter task id: ')
+
+    return args.name, args.dept, int(args.id)
 
 
 def _run_tool():
